@@ -44,17 +44,14 @@ export function StackSection() {
                   aria-expanded={isActive}
                   onMouseEnter={() => setActive(index)}
                   onFocus={() => setActive(index)}
-                  // A tap fires mouseenter first, then click — a toggle here
-                  // would instantly close what the tap just opened.
-                  onClick={() => setActive(index)}
-                  className="block w-full cursor-pointer py-3 text-left sm:py-2.5"
+                  onClick={() => setActive(isActive ? null : index)}
+                  className="block w-full cursor-pointer py-2 text-left sm:py-2.5"
                 >
-                  {/* Meta row on phones: number + role above the name */}
-                  <span className="mb-1.5 flex items-center gap-3 sm:hidden">
+                  <span className="flex flex-wrap items-baseline gap-x-5 gap-y-1">
                     <span
                       aria-hidden="true"
                       className={cn(
-                        "text-xs font-bold tracking-widest transition-colors duration-300",
+                        "w-8 shrink-0 text-xs font-bold tracking-widest transition-colors duration-300",
                         isActive ? "text-accent" : "text-line-strong",
                       )}
                     >
@@ -62,29 +59,7 @@ export function StackSection() {
                     </span>
                     <span
                       className={cn(
-                        "petal-chip px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] transition-all duration-300",
-                        isActive
-                          ? "bg-accent text-paper"
-                          : "bg-paper-raised text-muted",
-                      )}
-                    >
-                      {item.role}
-                    </span>
-                  </span>
-
-                  <span className="flex items-baseline gap-x-5">
-                    <span
-                      aria-hidden="true"
-                      className={cn(
-                        "hidden w-8 shrink-0 text-xs font-bold tracking-widest transition-colors duration-300 sm:inline-block",
-                        isActive ? "text-accent" : "text-line-strong",
-                      )}
-                    >
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <span
-                      className={cn(
-                        "text-hollow min-w-0 break-words font-display text-[clamp(1.5rem,7vw,3.9rem)] font-extrabold leading-[1.15] tracking-tight",
+                        "text-hollow font-display text-[clamp(1.9rem,6vw,3.9rem)] font-extrabold leading-[1.15] tracking-tight",
                         isActive && "!text-ink",
                       )}
                       style={
@@ -97,7 +72,7 @@ export function StackSection() {
                     </span>
                     <span
                       className={cn(
-                        "petal-chip hidden px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] transition-all duration-300 sm:inline-block",
+                        "petal-chip px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] transition-all duration-300",
                         isActive
                           ? "bg-accent text-paper"
                           : "bg-paper-raised text-muted",
@@ -116,7 +91,7 @@ export function StackSection() {
                     )}
                   >
                     <span className="overflow-hidden">
-                      <span className="block max-w-2xl pb-3 pt-2 text-[15px] leading-relaxed text-ink-soft sm:pl-[3.25rem]">
+                      <span className="block max-w-2xl pb-3 pl-[3.25rem] pt-2 text-[15px] leading-relaxed text-ink-soft">
                         {item.why}
                       </span>
                     </span>

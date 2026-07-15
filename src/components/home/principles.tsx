@@ -111,10 +111,8 @@ export function Principles() {
                   return (
                     <text
                       key={petal.angle}
-                      // Fixed precision: raw floats stringify differently on
-                      // server and client and trigger hydration mismatches.
-                      x={(distance * Math.sin(radians)).toFixed(2)}
-                      y={(-distance * Math.cos(radians) + 2).toFixed(2)}
+                      x={distance * Math.sin(radians)}
+                      y={-distance * Math.cos(radians) + 2}
                       textAnchor="middle"
                       className={cn(
                         "pointer-events-none font-display font-bold transition-[fill] duration-500",
@@ -162,21 +160,29 @@ export function Principles() {
                 </motion.div>
               </AnimatePresence>
 
-              {/* Progress bar */}
-              <div className="mt-8 flex gap-2.5">
+              {/* Progress petals */}
+              <div className="mt-8 flex items-end gap-3">
                 {principles.map((item, index) => (
                   <button
                     key={item.original}
                     type="button"
                     aria-label={item.name}
                     onClick={() => select(index)}
-                    className={cn(
-                      "h-1.5 cursor-pointer rounded-full transition-all duration-400",
-                      active === index
-                        ? "w-8 bg-accent-bright"
-                        : "w-3 bg-cream/25 hover:bg-cream/50",
-                    )}
-                  />
+                    className="cursor-pointer p-1"
+                  >
+                    <svg
+                      viewBox="0 0 10 12"
+                      className={cn(
+                        "w-2.5 transition-all duration-400",
+                        active === index
+                          ? "h-4 fill-accent-bright"
+                          : "h-3 fill-cream/25 hover:fill-cream/50",
+                      )}
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12 C 1.5 9.5, 1 4, 5 0 C 9 4, 8.5 9.5, 5 12 Z" />
+                    </svg>
+                  </button>
                 ))}
               </div>
             </div>
