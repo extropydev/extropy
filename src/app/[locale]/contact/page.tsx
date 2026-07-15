@@ -82,7 +82,7 @@ export default async function ContactPage({
                   {social.label}
                 </p>
                 <p className="mt-1 text-xs font-semibold text-muted">
-                  @extropy.dev
+                  {social.handle}
                 </p>
               </div>
               <span className="petal-chip flex h-10 w-10 shrink-0 items-center justify-center border border-line-strong text-ink transition-colors duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-paper">
