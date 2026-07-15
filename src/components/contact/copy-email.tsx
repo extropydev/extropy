@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/cn";
 
-/** Email line with a copy-to-clipboard affordance. */
+/** Email line with a copy-to-clipboard affordance. Styled for a dark surface. */
 export function CopyEmail({ email }: { email: string }) {
   const t = useTranslations("contact");
   const [copied, setCopied] = useState(false);
@@ -28,10 +28,10 @@ export function CopyEmail({ email }: { email: string }) {
   }
 
   return (
-    <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+    <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
       <a
         href={`mailto:${email}`}
-        className="link-underline break-all font-display text-2xl font-semibold tracking-tight text-ink sm:text-4xl"
+        className="break-all font-display text-xl font-bold tracking-tight text-cream transition-colors hover:text-accent-bright sm:text-3xl"
       >
         {email}
       </a>
@@ -39,10 +39,10 @@ export function CopyEmail({ email }: { email: string }) {
         type="button"
         onClick={copy}
         className={cn(
-          "cursor-pointer rounded-full border px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.16em] transition-colors duration-300",
+          "cursor-pointer rounded-[6px] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.14em] transition-colors duration-300",
           copied
-            ? "border-accent bg-accent text-paper"
-            : "border-line text-muted hover:border-line-strong hover:text-ink",
+            ? "bg-accent-bright text-ink"
+            : "bg-cream/10 text-cream hover:bg-cream/20",
         )}
       >
         {copied ? t("copied") : t("copy")}

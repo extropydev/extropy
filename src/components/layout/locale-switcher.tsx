@@ -45,7 +45,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
         onClick={() => setOpen((value) => !value)}
         aria-expanded={open}
         aria-label={localeNames[locale as Locale]}
-        className="group flex cursor-pointer items-center gap-1.5 rounded-full border border-line px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-ink-soft transition-colors hover:border-line-strong hover:text-ink"
+        className="group petal-chip flex cursor-pointer items-center gap-1.5 border border-line-strong px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-ink-soft transition-colors hover:border-ink hover:text-ink"
       >
         <GlobeIcon className="h-4 w-4" />
         {locale}
@@ -53,7 +53,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
 
       <div
         className={cn(
-          "absolute right-0 top-[calc(100%+8px)] z-50 min-w-40 origin-top-right rounded-xl border border-line bg-paper p-1.5 shadow-[0_16px_40px_-12px_rgba(24,23,22,0.18)] transition-all duration-200",
+          "petal-card-sm absolute right-0 top-[calc(100%+8px)] z-50 min-w-44 origin-top-right bg-ink p-2 shadow-[0_20px_50px_-16px_rgba(24,23,22,0.45)] transition-all duration-200",
           open
             ? "pointer-events-auto scale-100 opacity-100"
             : "pointer-events-none scale-95 opacity-0",
@@ -65,14 +65,24 @@ export function LocaleSwitcher({ className }: { className?: string }) {
             type="button"
             onClick={() => selectLocale(item)}
             className={cn(
-              "flex w-full cursor-pointer items-center justify-between gap-4 rounded-lg px-3 py-2 text-left text-sm transition-colors hover:bg-paper-raised",
-              item === locale ? "text-ink" : "text-muted",
+              "flex w-full cursor-pointer items-center justify-between gap-4 rounded-lg px-3.5 py-2.5 text-left text-sm font-medium transition-colors hover:bg-cream/10",
+              item === locale ? "text-cream" : "text-cream-soft",
             )}
           >
             {localeNames[item]}
-            <span className="font-mono text-[10px] uppercase tracking-widest">
-              {item}
-            </span>
+            {item === locale ? (
+              <svg
+                viewBox="0 0 10 12"
+                className="h-2.5 w-2 fill-accent-bright"
+                aria-hidden="true"
+              >
+                <path d="M5 12 C 1.5 9.5, 1 4, 5 0 C 9 4, 8.5 9.5, 5 12 Z" />
+              </svg>
+            ) : (
+              <span className="text-[10px] font-bold uppercase tracking-widest opacity-60">
+                {item}
+              </span>
+            )}
           </button>
         ))}
       </div>

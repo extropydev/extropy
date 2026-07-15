@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { ArrowRightIcon } from "@/components/icons";
-import { NoteRow } from "@/components/notes/note-row";
+import { NoteCard } from "@/components/notes/note-card";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionLabel } from "@/components/ui/section-label";
 import { getNotes, NOTE_SLUGS } from "@/content/notes";
@@ -13,12 +13,12 @@ export async function NotesPreview({ locale }: { locale: Locale }) {
   const featured = NOTE_SLUGS.slice(0, 3);
 
   return (
-    <section className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+    <section className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
       <Reveal>
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <SectionLabel className="text-muted">{t("label")}</SectionLabel>
-            <h2 className="mt-5 max-w-xl text-balance font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+            <SectionLabel>{t("label")}</SectionLabel>
+            <h2 className="mt-6 max-w-2xl text-balance font-display text-2xl font-bold leading-snug tracking-tight sm:text-4xl">
               {t("title")}
             </h2>
             <p className="mt-4 max-w-xl text-pretty leading-relaxed text-muted">
@@ -27,26 +27,26 @@ export async function NotesPreview({ locale }: { locale: Locale }) {
           </div>
           <Link
             href="/notes"
-            className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-ink"
+            className="group inline-flex items-center gap-2.5 rounded-[6px] border-2 border-line-strong px-5 py-2.5 text-xs font-bold uppercase tracking-[0.12em] text-ink transition-colors duration-300 hover:border-ink"
           >
-            <span className="link-underline">{t("viewAll")}</span>
+            {t("viewAll")}
             <ArrowRightIcon className="h-4 w-4" />
           </Link>
         </div>
       </Reveal>
 
-      <Reveal className="mt-12" delay={0.1}>
-        <div>
-          {featured.map((slug) => (
-            <NoteRow
-              key={slug}
+      <div className="mt-12 grid gap-5 md:grid-cols-3">
+        {featured.map((slug, position) => (
+          <Reveal key={slug} delay={position * 0.08} className="flex">
+            <NoteCard
               slug={slug}
               index={NOTE_SLUGS.indexOf(slug)}
               note={notes[slug]}
+              className="w-full"
             />
-          ))}
-        </div>
-      </Reveal>
+          </Reveal>
+        ))}
+      </div>
     </section>
   );
 }

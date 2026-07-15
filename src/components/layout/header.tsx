@@ -13,6 +13,14 @@ const NAV_ITEMS = [
   { href: "/contact", key: "contact" },
 ] as const;
 
+function PetalTick({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 10 12" className={className} aria-hidden="true">
+      <path d="M5 12 C 1.5 9.5, 1 4, 5 0 C 9 4, 8.5 9.5, 5 12 Z" />
+    </svg>
+  );
+}
+
 export function Header() {
   const t = useTranslations("nav");
   const pathname = usePathname();
@@ -46,10 +54,10 @@ export function Header() {
       <div
         aria-hidden="true"
         className={cn(
-          "absolute inset-0 border-b transition-[border-color,background-color] duration-300",
+          "absolute inset-0 transition-[background-color,box-shadow] duration-300",
           scrolled || menuOpen
-            ? "border-line bg-paper/85 backdrop-blur-md"
-            : "border-transparent bg-paper/0",
+            ? "bg-paper/85 shadow-[0_1px_0_0_rgba(24,23,22,0.06)] backdrop-blur-md"
+            : "bg-paper/0",
         )}
       />
       <div className="relative mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
@@ -59,12 +67,12 @@ export function Header() {
           aria-label="extropy — home"
         >
           <LotusMark interactive className="h-6 w-8" />
-          <span className="font-display text-[1.35rem] font-semibold tracking-tight">
+          <span className="font-display text-lg font-bold tracking-tight">
             extropy
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-2 md:flex" aria-label="Main">
           {NAV_ITEMS.map((item) => {
             const active =
               pathname === item.href || pathname.startsWith(`${item.href}/`);
@@ -73,15 +81,23 @@ export function Header() {
                 key={item.key}
                 href={item.href}
                 className={cn(
-                  "link-underline text-sm transition-colors",
+                  "group/nav relative flex items-center gap-2 px-3.5 py-2 text-sm font-semibold transition-colors",
                   active ? "text-ink" : "text-muted hover:text-ink",
                 )}
               >
+                <PetalTick
+                  className={cn(
+                    "h-2.5 w-2 transition-all duration-300",
+                    active
+                      ? "scale-100 fill-accent opacity-100"
+                      : "-translate-y-0.5 scale-50 fill-accent opacity-0 group-hover/nav:translate-y-0 group-hover/nav:scale-100 group-hover/nav:opacity-100",
+                  )}
+                />
                 {t(item.key)}
               </Link>
             );
           })}
-          <LocaleSwitcher />
+          <LocaleSwitcher className="ml-3" />
         </nav>
 
         <div className="flex items-center gap-3 md:hidden">
@@ -95,14 +111,14 @@ export function Header() {
           >
             <span
               className={cn(
-                "absolute h-px w-5 bg-ink transition-transform duration-300",
-                menuOpen ? "rotate-45" : "-translate-y-[3.5px]",
+                "absolute h-0.5 w-5 rounded-full bg-ink transition-transform duration-300",
+                menuOpen ? "rotate-45" : "-translate-y-1",
               )}
             />
             <span
               className={cn(
-                "absolute h-px w-5 bg-ink transition-transform duration-300",
-                menuOpen ? "-rotate-45" : "translate-y-[3.5px]",
+                "absolute h-0.5 w-5 rounded-full bg-ink transition-transform duration-300",
+                menuOpen ? "-rotate-45" : "translate-y-1",
               )}
             />
           </button>
@@ -112,31 +128,29 @@ export function Header() {
       {/* Mobile menu */}
       <div
         className={cn(
-          "fixed inset-x-0 bottom-0 top-16 -z-10 flex flex-col overflow-y-auto bg-paper px-5 pb-10 pt-6 transition-all duration-300 md:hidden",
+          "fixed inset-x-0 bottom-0 top-16 -z-10 flex flex-col overflow-y-auto bg-paper px-5 pb-10 pt-8 transition-all duration-300 md:hidden",
           menuOpen
             ? "pointer-events-auto translate-y-0 opacity-100"
             : "pointer-events-none -translate-y-2 opacity-0",
         )}
       >
-        <nav className="flex flex-col" aria-label="Mobile">
+        <nav className="flex flex-col gap-3" aria-label="Mobile">
           {NAV_ITEMS.map((item, index) => (
             <Link
               key={item.key}
               href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="flex items-center justify-between border-b border-line py-5 font-display text-3xl text-ink"
-              style={{ transitionDelay: `${index * 40}ms` }}
+              className="petal-card-sm flex items-center justify-between bg-paper-raised px-6 py-6 font-display text-xl font-bold text-ink"
             >
               {t(item.key)}
-              <span className="font-mono text-xs text-muted">
-                0{index + 1}
-              </span>
+              <PetalTick className="h-3.5 w-3 fill-accent" />
+              <span className="sr-only">{index + 1}</span>
             </Link>
           ))}
         </nav>
-        <div className="mt-auto flex items-center justify-between text-muted">
+        <div className="mt-auto flex items-center justify-between pt-10 text-muted">
           <LotusMark className="h-5 w-7" />
-          <span className="font-mono text-[11px] uppercase tracking-[0.2em]">
+          <span className="text-[11px] font-bold uppercase tracking-[0.2em]">
             extropy.dev
           </span>
         </div>

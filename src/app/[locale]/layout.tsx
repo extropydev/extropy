@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Source_Serif_4 } from "next/font/google";
+import { Inter, Unbounded } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -8,21 +8,14 @@ import { Header } from "@/components/layout/header";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
-  subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
-  axes: ["opsz"],
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
+  subsets: ["latin", "cyrillic", "cyrillic-ext"],
 });
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains",
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "500"],
 });
 
 export function generateStaticParams() {
@@ -80,7 +73,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${sourceSerif.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+      className={`${unbounded.variable} ${inter.variable}`}
     >
       <body className="flex min-h-screen flex-col">
         <NextIntlClientProvider>

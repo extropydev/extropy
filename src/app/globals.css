@@ -3,10 +3,11 @@
 /*
  * extropy.dev — design tokens
  * Warm paper, ink, deep moss accent. Logo cream reserved for dark bands.
+ * The petal (two rounded + two sharp corners) is the core shape of the system.
  */
 :root {
   --paper: #faf8f3;
-  --paper-raised: #f2eee4;
+  --paper-raised: #f1ede2;
   --ink: #181716;
   --ink-soft: #3e3b36;
   --muted: #6b655c;
@@ -14,6 +15,7 @@
   --line-strong: #d4cec0;
   --accent: #47663f;
   --accent-deep: #35502f;
+  --accent-bright: #8fb283;
   --cream: #ece2d1;
   --cream-soft: #c9beab;
 }
@@ -28,12 +30,16 @@
   --color-line-strong: var(--line-strong);
   --color-accent: var(--accent);
   --color-accent-deep: var(--accent-deep);
+  --color-accent-bright: var(--accent-bright);
   --color-cream: var(--cream);
   --color-cream-soft: var(--cream-soft);
 
-  --font-display: var(--font-source-serif), Georgia, serif;
+  --font-display: var(--font-unbounded), system-ui, sans-serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas,
+    monospace;
+
+  --radius-btn: 6px;
 }
 
 html {
@@ -56,22 +62,45 @@ body {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
-/* Animated underline for inline links */
-.link-underline {
-  background-image: linear-gradient(currentColor, currentColor);
-  background-size: 0% 1px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-  padding-bottom: 2px;
+/* ————— Petal shapes: two open corners, two closed — the brand geometry ————— */
+
+.petal-card {
+  border-radius: 3rem 1rem 3rem 1rem;
+  transition:
+    border-radius 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.35s ease,
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.link-underline:hover,
-a:hover > .link-underline {
-  background-size: 100% 1px;
+.petal-card-sm {
+  border-radius: 1.75rem 0.5rem 1.75rem 0.5rem;
+  transition:
+    border-radius 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.35s ease,
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Hover = the bud opens: corners equalise into a full bloom */
+.petal-bloom:hover,
+a:hover > .petal-bloom,
+a:hover .petal-bloom {
+  border-radius: 2rem;
+}
+
+.petal-chip {
+  border-radius: 14px 4px 14px 4px;
+}
+
+/* Outlined display type that fills on hover/active (stack list, ghost numerals) */
+.text-hollow {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--line-strong);
+  transition:
+    color 0.4s ease,
+    -webkit-text-stroke-color 0.4s ease;
 }
 
 /* ————— Custom icon micro-animations (triggered by .group:hover) ————— */
@@ -165,6 +194,21 @@ a:hover > .link-underline {
 }
 .group:hover .icon-petal {
   transform: scale(1.06);
+}
+
+/* slow orbit for hero decoration */
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit 80s linear infinite;
+  transform-origin: center;
 }
 
 @media (prefers-reduced-motion: reduce) {

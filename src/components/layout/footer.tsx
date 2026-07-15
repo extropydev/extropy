@@ -15,20 +15,20 @@ export async function Footer() {
         <div className="flex flex-col gap-14 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
             <LotusMark className="h-9 w-12 text-cream" interactive />
-            <p className="mt-6 text-balance font-display text-2xl leading-snug text-cream">
+            <p className="mt-6 text-balance font-display text-lg font-bold leading-snug text-cream sm:text-xl">
               {t("tagline")}
             </p>
-            <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.2em] text-cream-soft">
+            <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-cream-soft">
               {t("location")} · <LocalTime />
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-10 sm:gap-20">
             <nav aria-label={t("sitemapLabel")}>
-              <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-cream-soft">
+              <h3 className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent-bright">
                 {t("sitemapLabel")}
               </h3>
-              <ul className="mt-5 space-y-3 text-sm">
+              <ul className="mt-5 space-y-3 text-sm font-medium">
                 {(
                   [
                     { href: "/", key: "home" },
@@ -40,7 +40,7 @@ export async function Footer() {
                   <li key={item.key}>
                     <Link
                       href={item.href}
-                      className="link-underline text-cream/85 transition-colors hover:text-cream"
+                      className="inline-block text-cream/75 transition-[color,transform] duration-300 hover:translate-x-1 hover:text-cream"
                     >
                       {nav(item.key)}
                     </Link>
@@ -50,19 +50,19 @@ export async function Footer() {
             </nav>
 
             <nav aria-label={t("elsewhereLabel")}>
-              <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-cream-soft">
+              <h3 className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent-bright">
                 {t("elsewhereLabel")}
               </h3>
-              <ul className="mt-5 space-y-3 text-sm">
+              <ul className="mt-5 space-y-3 text-sm font-medium">
                 {site.socials.map((social) => (
                   <li key={social.key}>
                     <a
                       href={social.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="group inline-flex items-center gap-1 text-cream/85 transition-colors hover:text-cream"
+                      className="group inline-flex items-center gap-1 text-cream/75 transition-[color,transform] duration-300 hover:translate-x-1 hover:text-cream"
                     >
-                      <span className="link-underline">{social.label}</span>
+                      {social.label}
                       <ArrowUpRightIcon className="h-3.5 w-3.5" />
                     </a>
                   </li>
@@ -70,7 +70,7 @@ export async function Footer() {
                 <li>
                   <a
                     href={`mailto:${site.email}`}
-                    className="link-underline text-cream/85 transition-colors hover:text-cream"
+                    className="inline-block text-cream/75 transition-[color,transform] duration-300 hover:translate-x-1 hover:text-cream"
                   >
                     {t("emailLabel")}
                   </a>
@@ -81,10 +81,10 @@ export async function Footer() {
         </div>
 
         {/* Oversized wordmark */}
-        <div className="mt-16 select-none overflow-hidden border-t border-cream/15 pt-10 sm:mt-20">
+        <div className="mt-16 select-none overflow-hidden pt-6 sm:mt-20">
           <p
             aria-hidden="true"
-            className="font-display text-[19vw] font-semibold leading-[0.85] tracking-tight text-cream/[0.09] md:text-[13rem]"
+            className="font-display text-[15vw] font-extrabold leading-[0.9] tracking-tight text-cream/[0.07] md:text-[10.5rem]"
           >
             extropy
           </p>
@@ -94,7 +94,7 @@ export async function Footer() {
           <p>
             © {new Date().getFullYear()} extropy — {t("owner")}
           </p>
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em]">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em]">
             {t("colophon")}
           </p>
         </div>
