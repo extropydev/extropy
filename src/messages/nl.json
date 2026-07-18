@@ -1,16 +1,17 @@
 {
   "meta": {
-    "title": "extropy — fullstack webengineering door Maksim",
-    "description": "Webapplicaties van commerciële kwaliteit met Next.js, Supabase en Stripe: betalingen die tot op de cent kloppen, authenticatie zonder lekken, snelheid als feature. Gebouwd door Maksim — extropy."
+    "title": "extropy. Webontwikkeling door Maksim",
+    "description": "Webshops, boekingsplatforms en productsites gebouwd met Next.js, Supabase en Stripe. Echte projecten, eerlijke techniek, vier talen."
   },
   "notFound": {
     "label": "404",
     "title": "Deze pagina bestaat niet",
-    "body": "Deze heeft de entropie te pakken gekregen. De link is kapot of de pagina is verhuisd — alles wat ertoe doet staat nog op zijn plek.",
+    "body": "De link is kapot of de pagina is verhuisd. Alles wat ertoe doet staat nog op zijn plek.",
     "cta": "Terug naar de homepage"
   },
   "nav": {
     "home": "Home",
+    "work": "Werk",
     "notes": "Veldnotities",
     "about": "Over mij",
     "contact": "Contact",
@@ -18,27 +19,27 @@
     "closeMenu": "Menu sluiten"
   },
   "footer": {
-    "tagline": "Orde tegen entropie — project voor project.",
+    "tagline": "Orde tegen entropie, project voor project.",
     "location": "Amersfoort, Nederland",
     "sitemapLabel": "Site",
     "elsewhereLabel": "Elders",
     "emailLabel": "E-mail",
     "owner": "Maksim",
-    "colophon": "Ontworpen en gemaakt door mensen"
+    "colophon": "Met de hand ontworpen en gebouwd, geen template"
   },
   "cta": {
-    "title": "Een project dat gewoon móét werken?",
-    "body": "Vertel me wat je bouwt — ik antwoord met hoe ik het zou bouwen: eerlijke scope, een echte planning en nergens een template.",
+    "title": "Een project dat gewoon moet werken?",
+    "body": "Vertel me wat je bouwt en ik antwoord met hoe ik het zou bouwen: eerlijke scope, een echte planning en niets uit een template.",
     "button": "Start het gesprek"
   },
   "home": {
     "hero": {
-      "label": "extropy · fullstack webengineering",
+      "label": "extropy · webontwikkeling",
       "titleA": "Bouwen tegen",
       "titleB": "entropie.",
-      "lede": "Ik ben Maksim, de ontwikkelaar achter extropy. Ik bouw webapplicaties van commerciële kwaliteit waarin betalingen tot op de cent kloppen, sessies niet lekken en elk schermformaat eersteklas is. Geen templates — en geen shortcuts die in productie opduiken.",
-      "ctaPrimary": "Zie hoe ik denk",
-      "ctaSecondary": "Het verhaal achter extropy"
+      "lede": "Ik ben Maksim, fullstack-ontwikkelaar. Ik bouw complete webproducten: webshops, boekingsplatforms, bezorgdiensten en productsites. Betalingen kloppen tot op de cent, accounts blijven veilig en elk schermformaat krijgt een volwaardige versie.",
+      "ctaPrimary": "Bekijk mijn werk",
+      "ctaSecondary": "Hoe ik denk"
     },
     "facts": [
       "Amersfoort, NL",
@@ -49,51 +50,51 @@
     "principles": {
       "label": "De vijf bloemblaadjes",
       "title": "De naam is een belofte. Het logo is haar diagram.",
-      "intro": "Extropie is het tegenovergestelde van entropie — orde die groeit in plaats van vervalt. De filosofie achter het woord rust op vijf principes, en de lotus in mijn beeldmerk draagt vijf blaadjes, één voor elk. Dit betekenen ze wanneer ik voor jou bouw.",
+      "intro": "Extropie is het tegenovergestelde van entropie: orde die groeit in plaats van vervalt. De filosofie achter het woord rust op vijf principes, en de lotus in mijn beeldmerk draagt vijf blaadjes, één voor elk. Dit betekenen ze wanneer ik voor jou bouw.",
       "inPracticeLabel": "In jouw project",
       "items": [
         {
           "name": "Voortdurende vooruitgang",
           "original": "Perpetual Progress",
-          "essence": "Onophoudelijke zelfverbetering en honger naar kennis — nooit genoegen nemen met het niveau dat al bereikt is.",
+          "essence": "Onophoudelijke zelfverbetering en honger naar kennis. Nooit genoegen nemen met het niveau dat al bereikt is.",
           "practice": "Jouw codebase verrot niet: dependencies blijven actueel, patronen worden herzien, en elk project dat ik oplever is meetbaar beter gebouwd dan het vorige."
         },
         {
           "name": "Zelftransformatie",
           "original": "Self-Transformation",
-          "essence": "Bewust iemand worden die meer kan — met wetenschap, technologie en eerlijk werk aan jezelf.",
-          "practice": "Ik begon in C++ en game-engines en bouwde mezelf om tot fullstack webengineer. Ik leer wat jouw probleem werkelijk nodig heeft — de stack dient het probleem, nooit andersom."
+          "essence": "Bewust iemand worden die meer kan, met wetenschap, technologie en eerlijk werk aan jezelf.",
+          "practice": "Ik begon in C++ en game-engines en bouwde mezelf om tot fullstack-ontwikkelaar. Ik leer wat jouw probleem werkelijk nodig heeft. De stack dient het probleem, nooit andersom."
         },
         {
           "name": "Praktisch optimisme",
           "original": "Practical Optimism",
           "essence": "Een constructieve blik op de toekomst: problemen zijn er om opgelost te worden, niet om te ondergaan of te dramatiseren.",
-          "practice": "Je hoort nooit “dat kan niet”. Je hoort “dit is de afweging, dit is mijn advies, dit is het plan” — en daarna wordt het opgeleverd."
+          "practice": "Je hoort nooit \"dat kan niet\". Je hoort \"dit is de afweging, dit is mijn advies, dit is het plan\". En daarna wordt het opgeleverd."
         },
         {
           "name": "Open samenleving",
           "original": "Open Society",
-          "essence": "Openheid voor kritiek en dialoog, en de afwezigheid van dogma's — ideeën winnen op inhoud.",
-          "practice": "Je ziet de repository, de inschattingen en de redenering erachter. Vragen krijgen rechte antwoorden, en “omdat ik het zeg” is nooit een argument."
+          "essence": "Openheid voor kritiek en dialoog, de afwezigheid van dogma's. Ideeën winnen op inhoud.",
+          "practice": "Je ziet de repository, de inschattingen en de redenering erachter. Vragen krijgen rechte antwoorden, en \"omdat ik het zeg\" is nooit een argument."
         },
         {
           "name": "Slimme technologie",
           "original": "Smart Technology",
-          "essence": "Technologie als hefboom — innovatie die vergroot wat mensen kunnen.",
-          "practice": "Saaie, bewezen techniek waar betrouwbaarheid telt; nieuwe techniek alleen waar die zichzelf terugverdient. Elke dependency in jouw project verdient zijn plek."
+          "essence": "Technologie als hefboom: innovatie die vergroot wat mensen kunnen.",
+          "practice": "Bewezen, saaie techniek waar betrouwbaarheid telt, nieuwe techniek alleen waar die zichzelf terugverdient. Elke dependency in jouw project verdient zijn plek."
         }
       ]
     },
     "notes": {
       "label": "Veldnotities",
       "title": "De vijf dingen waar klanten wakker van liggen",
-      "intro": "Ik laat liever denkwerk zien dan screenshots. Elke notitie neemt een echte angst — verloren betalingen, gelekte accounts, verdwijnende winkelwagens — en laat precies zien hoe ik er een non-issue van maak.",
+      "intro": "Elke notitie neemt een echte angst, zoals verloren betalingen, gelekte accounts of verdwijnende winkelwagens, en laat precies zien hoe ik er een non-issue van maak.",
       "viewAll": "Alle vijf notities"
     },
     "stack": {
       "label": "De stack",
       "title": "Weinig gereedschap, diep gekend",
-      "intro": "Liever zeven tools meesterlijk beheersen dan zeventig oppervlakkig. Dit is de set waarmee ik dagelijks bouw — en waarom elk zijn plek heeft verdiend.",
+      "intro": "Liever zeven tools meesterlijk beheersen dan zeventig oppervlakkig. Dit is de set waarmee ik dagelijks bouw, en waarom elk zijn plek heeft verdiend.",
       "items": [
         {
           "name": "Next.js",
@@ -108,7 +109,7 @@
         {
           "name": "Tailwind CSS",
           "role": "styling",
-          "why": "Designtokens afgedwongen door de compiler — een interface die één interface blijft, hoeveel handen hem ook aanraken."
+          "why": "Designtokens afgedwongen door de compiler. Het interface blijft één interface, hoeveel handen het ook aanraken."
         },
         {
           "name": "Supabase",
@@ -131,18 +132,33 @@
           "why": "De geldlaag, geïntegreerd zoals Stripes eigen documentatie het iedereen toewenst: webhooks, idempotentie, reconciliatie."
         }
       ]
-    },
-    "person": {
-      "label": "De persoon",
-      "body": "Negentien. Uit Odesa, bouwend vanuit Amersfoort. Vier talen, twee jaar opleveren voor het web, en één overtuiging: jong betekent niet junior — het betekent minder slechte gewoontes en meer te bewijzen.",
-      "cta": "Het hele verhaal"
     }
+  },
+  "work": {
+    "label": "Cases",
+    "title": "Werk dat voor zichzelf spreekt",
+    "intro": "Vier projecten, vier verschillende bedrijven: een webshop, een boekingsplatform, een premium bezorgdienst en een productlanding. Alles staat live, dus klik rond en oordeel zelf.",
+    "outro": "Elk project hier heb ik persoonlijk ontworpen en gebouwd, van de eerste wireframe tot het gedeployde product.",
+    "home": {
+      "label": "Uitgelicht werk",
+      "title": "Echte projecten om doorheen te klikken",
+      "intro": "Geen mockups en geen templates. Live producten met winkelwagens, accounts, boekingen en betalingen. Open er een en probeer het zelf.",
+      "viewAll": "Alle cases"
+    },
+    "viewCase": "Case",
+    "visitLive": "Open live site",
+    "backToWork": "Al het werk",
+    "aboutHeading": "Over het project",
+    "builtHeading": "Wat erin zit",
+    "craftHeading": "Details waar ik om geef",
+    "galleryHeading": "Van dichtbij",
+    "nextProject": "Volgend project"
   },
   "notes": {
     "label": "Veldnotities",
-    "title": "Wat er mis kan gaan — en waarom het niet gebeurt",
-    "intro": "Screenshots kan iedereen laten zien. Deze notities tonen oordeelsvermogen: vijf faalscenario's die onlinebedrijven echt geld kosten, en de engineering die elk ervan in mijn projecten tot een non-issue maakt.",
-    "outro": "Deze vijf notities zijn niet alles wat ik doe — ze zijn een staaltje van hoe ik denk. Dezelfde discipline geldt voor alles wat jouw project op me afvuurt.",
+    "title": "Wat er mis kan gaan, en waarom het niet gebeurt",
+    "intro": "Screenshots kan iedereen laten zien. Deze notities tonen oordeelsvermogen: vijf faalscenario's die onlinebedrijven echt geld kosten, en de techniek die elk ervan in mijn projecten tot een non-issue maakt.",
+    "outro": "Deze vijf notities zijn niet alles wat ik doe. Ze zijn een staaltje van hoe ik denk, en dezelfde discipline geldt voor alles wat jouw project op me afvuurt.",
     "backToNotes": "Alle notities",
     "noteLabel": "Veldnotitie",
     "worryLabel": "De zorg",
@@ -151,14 +167,14 @@
   },
   "about": {
     "label": "De persoon",
-    "title": "Maksim — de persoon achter extropy",
-    "lede": "Negentien jaar, uit Odesa, bouwend vanuit Nederland. Twee jaar in webengineering, met een pad dat begon in een postapocalyptische videogame.",
+    "title": "Maksim, de persoon achter extropy",
+    "lede": "Negentien jaar, uit Odesa, bouwend vanuit Nederland. Webontwikkelaar met een pad dat begon in een postapocalyptische videogame.",
     "story": {
       "heading": "Hoe ik hier kwam",
       "body": [
-        "Op mijn dertiende vond ik The Last of Us, en die herprogrammeerde me. Het was niet zomaar een game — het was het bewijs dat software een verhaal kan dragen dat binnenkomt als een film. Ik wilde zulke werelden zelf bouwen, dus leerde ik de taal waarin ze gebouwd worden: C++.",
-        "C++ bracht me naar Unreal Engine, C# naar Unity, en een reeks eigen projecten leerde me wat engines het beste leren — hoe complexe systemen in elkaar grijpen, en waarom ze uit elkaar vallen. Ergens tussen die projecten zag ik waar mijn tijd werkelijk heenging: niet naar gameplay, maar naar interfaces, logica, structuur. Het web had dat allemaal, plus iets wat games niet hadden — echte mensen die direct gebruiken wat je bouwt.",
-        "In 2024 nam de oorlog de geografische beslissing voor mij: het college waar ik in Odesa studeerde werd verwoest. Ik verhuisde naar Nederland, begon aan software development bij MBO Amersfoort en bleef bouwen — in een nieuw land, in een nieuwe taal. Toen hield extropy op een mooi woord te zijn en werd het mijn manier van werken: orde die groeit, tegen alles in wat de andere kant op trekt."
+        "Op mijn dertiende vond ik The Last of Us, en die herprogrammeerde me. Het was niet zomaar een game, maar het bewijs dat software een verhaal kan dragen dat binnenkomt als een film. Ik wilde zulke werelden zelf bouwen, dus leerde ik de taal waarin ze gebouwd worden: C++.",
+        "C++ bracht me naar Unreal Engine, C# naar Unity, en een reeks eigen projecten leerde me wat engines het beste leren: hoe complexe systemen in elkaar grijpen, en waarom ze uit elkaar vallen. Ergens tussen die projecten zag ik waar mijn tijd werkelijk heenging. Niet naar gameplay, maar naar interfaces, logica, structuur. Het web had dat allemaal, plus iets wat games niet hadden: echte mensen die direct gebruiken wat je bouwt.",
+        "In 2024 nam de oorlog de geografische beslissing voor mij: het college waar ik in Odesa studeerde werd verwoest. Ik verhuisde naar Nederland, begon aan software development bij MBO Amersfoort en bleef bouwen, in een nieuw land en een nieuwe taal. Toen hield extropy op een mooi woord te zijn en werd het mijn manier van werken: orde die groeit, tegen alles in wat de andere kant op trekt."
       ]
     },
     "timeline": {
@@ -182,18 +198,18 @@
         {
           "period": "2024",
           "title": "Odesa → Amersfoort",
-          "body": "Mijn college in Odesa wordt verwoest in de oorlog. Ik verhuis naar Nederland en ga verder als student software development aan MBO Amersfoort — zonder een tel te missen."
+          "body": "Mijn college in Odesa wordt verwoest in de oorlog. Ik verhuis naar Nederland en ga verder als student software development aan MBO Amersfoort, zonder een tel te missen."
         },
         {
-          "period": "2025 — nu",
+          "period": "Nu",
           "title": "extropy",
-          "body": "Een fullstack-project van commerciële kwaliteit, van begin tot eind opgeleverd: betalingen, auth, winkelwagen — alles. Het merk krijgt zijn naam, zijn lotus en deze site."
+          "body": "Opgeleverde projecten: een webshop, een boekingsplatform, een bezorgdienst, productsites. Het merk krijgt zijn naam, zijn lotus en deze site."
         }
       ]
     },
     "languages": {
       "heading": "Vier talen, dagelijks",
-      "intro": "Communicatie is onderdeel van engineering. Ik werk in alle vier de talen rechtstreeks met klanten — zonder vertaler ertussen.",
+      "intro": "Communicatie is onderdeel van engineering. Ik werk in alle vier de talen rechtstreeks met klanten, zonder vertaler ertussen.",
       "items": [
         { "name": "Oekraïens", "level": "moedertaal" },
         { "name": "Russisch", "level": "moedertaal" },
@@ -202,14 +218,14 @@
       ]
     },
     "why": {
-      "heading": "Waarom “extropy”",
-      "body": "Entropie is verval — systemen die afglijden naar wanorde. Extropie is de tegengestelde kracht: intelligentie en bewuste inspanning die dingen mettertijd beter maken. Vijf principes, vijf lotusblaadjes — en de maatstaf waar elk project langs wordt gelegd."
+      "heading": "Waarom \"extropy\"",
+      "body": "Entropie is verval: systemen die afglijden naar wanorde. Extropie is de tegengestelde kracht, intelligentie en bewuste inspanning die dingen mettertijd beter maken. Vijf principes, vijf lotusblaadjes, en de maatstaf waar elk project langs wordt gelegd."
     }
   },
   "contact": {
     "label": "Contact",
     "title": "Vertel me wat je bouwt",
-    "lede": "Een shop die moet verkopen, een app die moet werken, of een idee dat een eerlijke technische mening verdient — schrijf me in elk van mijn vier talen.",
+    "lede": "Een shop die moet verkopen, een app die moet werken, of een idee dat een eerlijke technische mening verdient. Schrijf me in elk van mijn vier talen.",
     "emailLabel": "E-mail",
     "availability": "Momenteel open voor nieuwe projecten",
     "copy": "Kopieer",
@@ -220,11 +236,11 @@
       "items": [
         {
           "title": "We praten",
-          "body": "Jij beschrijft het doel in gewone woorden. Ik stel de vragen die de echte eisen blootleggen — meestal nuttiger dan de briefing zelf."
+          "body": "Jij beschrijft het doel in gewone woorden. Ik stel de vragen die de echte eisen blootleggen. Dat is meestal nuttiger dan de briefing zelf."
         },
         {
           "title": "Je krijgt een plan",
-          "body": "Scope, fases, een eerlijke planning en wat elke fase kost. Is iets riskant, dan hoor je het nu — niet in week zes."
+          "body": "Scope, fases, een eerlijke planning en wat elke fase kost. Is iets riskant, dan hoor je het nu en niet in week zes."
         },
         {
           "title": "Ik bouw, jij kijkt mee",
@@ -232,7 +248,7 @@
         },
         {
           "title": "Lancering is geen afscheid",
-          "body": "Je krijgt een gedocumenteerde, onderhoudbare codebase — en ik blijf in de buurt om te zorgen dat hij het contact met echte gebruikers overleeft."
+          "body": "Je krijgt een gedocumenteerde, onderhoudbare codebase, en ik blijf in de buurt om te zorgen dat hij het contact met echte gebruikers overleeft."
         }
       ]
     }

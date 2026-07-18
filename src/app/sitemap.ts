@@ -1,10 +1,13 @@
 import type { MetadataRoute } from "next";
 import { NOTE_SLUGS } from "@/content/notes/types";
+import { WORK_SLUGS } from "@/content/work/types";
 import { routing } from "@/i18n/routing";
 import { site } from "@/lib/site";
 
 const PATHS = [
   "",
+  "/work",
+  ...WORK_SLUGS.map((slug) => `/work/${slug}`),
   "/notes",
   ...NOTE_SLUGS.map((slug) => `/notes/${slug}`),
   "/about",

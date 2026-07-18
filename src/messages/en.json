@@ -1,16 +1,17 @@
 {
   "meta": {
-    "title": "extropy — fullstack web engineering by Maksim",
-    "description": "Commerce-grade web apps with Next.js, Supabase and Stripe: payments that reconcile to the cent, auth without leaks, speed as a feature. Built by Maksim — extropy."
+    "title": "extropy. Web development by Maksim",
+    "description": "Online stores, booking platforms and product sites built with Next.js, Supabase and Stripe. Real projects, honest engineering, four languages."
   },
   "notFound": {
     "label": "404",
     "title": "This page doesn't exist",
-    "body": "Entropy got this one. The link is broken or the page has moved — everything that matters is still in its place.",
+    "body": "The link is broken or the page has moved. Everything that matters is still in its place.",
     "cta": "Back to the homepage"
   },
   "nav": {
     "home": "Home",
+    "work": "Work",
     "notes": "Field notes",
     "about": "About",
     "contact": "Contact",
@@ -18,27 +19,27 @@
     "closeMenu": "Close menu"
   },
   "footer": {
-    "tagline": "Order against entropy — one project at a time.",
+    "tagline": "Order against entropy, one project at a time.",
     "location": "Amersfoort, the Netherlands",
     "sitemapLabel": "Site",
     "elsewhereLabel": "Elsewhere",
     "emailLabel": "Email",
     "owner": "Maksim",
-    "colophon": "Designed & built by Humans"
+    "colophon": "Designed and built by hand, no template"
   },
   "cta": {
     "title": "Have a project that has to work?",
-    "body": "Tell me what you're building — I'll answer with how I'd build it: honest scope, a real timeline, and no template in sight.",
+    "body": "Tell me what you're building and I'll answer with how I'd build it: honest scope, a real timeline, and nothing copied from a template.",
     "button": "Start the conversation"
   },
   "home": {
     "hero": {
-      "label": "extropy · fullstack web engineering",
+      "label": "extropy · web development",
       "titleA": "Building against",
       "titleB": "entropy.",
-      "lede": "I'm Maksim, the developer behind extropy. I build commerce-grade web apps where payments reconcile to the cent, sessions don't leak, and every screen size is first-class. No templates — and no shortcuts that surface in production.",
-      "ctaPrimary": "See how I think",
-      "ctaSecondary": "The story behind extropy"
+      "lede": "I'm Maksim, a fullstack developer. I build complete web products: online stores, booking platforms, delivery services and product sites. Payments add up to the cent, accounts stay secure, and every screen size is treated as first class.",
+      "ctaPrimary": "See my work",
+      "ctaSecondary": "How I think"
     },
     "facts": [
       "Amersfoort, NL",
@@ -49,56 +50,56 @@
     "principles": {
       "label": "The five petals",
       "title": "The name is a promise. The logo is its diagram.",
-      "intro": "Extropy is the opposite of entropy — order that grows instead of decaying. The philosophy behind the word rests on five principles, and the lotus in my mark carries five petals, one for each. Here is what they mean when I build for you.",
+      "intro": "Extropy is the opposite of entropy: order that grows instead of decaying. The philosophy behind the word rests on five principles, and the lotus in my mark carries five petals, one for each. Here is what they mean when I build for you.",
       "inPracticeLabel": "In your project",
       "items": [
         {
           "name": "Perpetual Progress",
           "original": "Perpetual Progress",
-          "essence": "Relentless self-improvement and the pursuit of knowledge — never settling for the level already reached.",
+          "essence": "Relentless self-improvement and the pursuit of knowledge. Never settling for the level already reached.",
           "practice": "Your codebase never rots: dependencies stay current, patterns get revisited, and every project I ship is measurably better engineered than the one before it."
         },
         {
           "name": "Self-Transformation",
           "original": "Self-Transformation",
-          "essence": "Deliberately becoming someone more capable — with science, technology, and honest work on yourself.",
-          "practice": "I started in C++ and game engines and rebuilt myself into a fullstack web engineer. I'll learn whatever your problem actually needs — the stack serves the problem, never the reverse."
+          "essence": "Deliberately becoming someone more capable, with science, technology and honest work on yourself.",
+          "practice": "I started in C++ and game engines and rebuilt myself into a fullstack web developer. I'll learn whatever your problem actually needs. The stack serves the problem, never the reverse."
         },
         {
           "name": "Practical Optimism",
           "original": "Practical Optimism",
           "essence": "A constructive view of the future: problems exist to be solved, not endured or dramatized.",
-          "practice": "You never hear “that's impossible”. You hear “here's the trade-off, here's my recommendation, here's the plan” — and then it ships."
+          "practice": "You never hear \"that's impossible\". You hear \"here's the trade-off, here's my recommendation, here's the plan\". And then it ships."
         },
         {
           "name": "Open Society",
           "original": "Open Society",
-          "essence": "Openness to critique and dialogue, and the absence of dogma — ideas win on merit.",
-          "practice": "You see the repository, the estimates, and the reasoning behind them. Questions get straight answers, and “because I said so” is never an argument."
+          "essence": "Openness to critique and dialogue, the absence of dogma. Ideas win on merit.",
+          "practice": "You see the repository, the estimates, and the reasoning behind them. Questions get straight answers, and \"because I said so\" is never an argument."
         },
         {
           "name": "Smart Technology",
           "original": "Smart Technology",
-          "essence": "Technology as a lever — innovation that extends what people can do.",
-          "practice": "Boring, proven tech where reliability matters; new tech only where it pays for itself. Every dependency in your project earns its place."
+          "essence": "Technology as a lever: innovation that extends what people can do.",
+          "practice": "Proven, boring tech where reliability matters, new tech only where it pays for itself. Every dependency in your project earns its place."
         }
       ]
     },
     "notes": {
       "label": "Field notes",
       "title": "The five things clients worry about",
-      "intro": "I'd rather show thinking than screenshots. Each note takes a real fear — lost payments, leaked accounts, vanishing carts — and shows exactly how I make it a non-issue.",
+      "intro": "Every note takes a real fear, like lost payments, leaked accounts or vanishing carts, and shows exactly how I make it a non-issue.",
       "viewAll": "All five notes"
     },
     "stack": {
       "label": "The stack",
       "title": "Few tools, deeply known",
-      "intro": "I'd rather master seven tools than dabble in seventy. This is the set I build with every day — and why each one earned its place.",
+      "intro": "I'd rather master seven tools than dabble in seventy. This is the set I build with every day, and why each one earned its place.",
       "items": [
         {
           "name": "Next.js",
           "role": "framework",
-          "why": "One framework for the whole product: server rendering, streaming, API routes. The fastest path from idea to production-grade."
+          "why": "One framework for the whole product: server rendering, streaming, API routes. The fastest path from idea to production quality."
         },
         {
           "name": "TypeScript",
@@ -108,7 +109,7 @@
         {
           "name": "Tailwind CSS",
           "role": "styling",
-          "why": "Design tokens enforced by the compiler — an interface that stays one interface, no matter how many hands touch it."
+          "why": "Design tokens enforced by the compiler. The interface stays one interface, no matter how many hands touch it."
         },
         {
           "name": "Supabase",
@@ -131,18 +132,33 @@
           "why": "The money layer, integrated the way Stripe's own docs wish everyone did it: webhooks, idempotency, reconciliation."
         }
       ]
-    },
-    "person": {
-      "label": "The person",
-      "body": "Nineteen. From Odesa, building from Amersfoort. Four languages, two years of shipping for the web, and one conviction: young doesn't mean junior — it means fewer bad habits and more to prove.",
-      "cta": "The full story"
     }
+  },
+  "work": {
+    "label": "Case studies",
+    "title": "Work that speaks for itself",
+    "intro": "Four projects, four different businesses: an online store, a booking platform, a premium delivery service and a product landing. Every one is live, so click around and judge for yourself.",
+    "outro": "Every project here was designed and built by me personally, from the first wireframe to the deployed product.",
+    "home": {
+      "label": "Selected work",
+      "title": "Real projects you can click through",
+      "intro": "Not mockups and not templates. Live products with carts, accounts, bookings and payments. Open any of them and try it yourself.",
+      "viewAll": "All case studies"
+    },
+    "viewCase": "Case study",
+    "visitLive": "Open live site",
+    "backToWork": "All work",
+    "aboutHeading": "About the project",
+    "builtHeading": "What's inside",
+    "craftHeading": "Details I care about",
+    "galleryHeading": "A closer look",
+    "nextProject": "Next project"
   },
   "notes": {
     "label": "Field notes",
-    "title": "What could go wrong — and why it won't",
+    "title": "What could go wrong, and why it won't",
     "intro": "Anyone can show screenshots. These notes show judgment: five failure modes that cost online businesses real money, and the engineering that makes each one a non-issue in my projects.",
-    "outro": "These five notes aren't everything I do — they're a sample of how I think. The same discipline applies to whatever your project throws at me.",
+    "outro": "These five notes aren't everything I do. They're a sample of how I think, and the same discipline applies to whatever your project throws at me.",
     "backToNotes": "All notes",
     "noteLabel": "Field note",
     "worryLabel": "The worry",
@@ -151,14 +167,14 @@
   },
   "about": {
     "label": "The person",
-    "title": "Maksim — the person behind extropy",
-    "lede": "Nineteen years old, from Odesa, building from the Netherlands. Two years into web engineering, with a path that started inside a post-apocalyptic video game.",
+    "title": "Maksim, the person behind extropy",
+    "lede": "Nineteen years old, from Odesa, building from the Netherlands. Web developer with a path that started inside a post-apocalyptic video game.",
     "story": {
       "heading": "How I got here",
       "body": [
-        "At thirteen I found The Last of Us, and it rewired me. It wasn't just a game — it was proof that software could carry a story that hits like a film. I wanted to build worlds like that, so I learned the language they're built in: C++.",
-        "C++ took me to Unreal Engine, C# took me to Unity, and a series of pet projects taught me what engines teach best — how complex systems fit together, and why they fall apart. Somewhere between those projects I noticed where my time actually went: not gameplay, but interfaces, logic, structure. The web had all of that, plus something games didn't — real people using what you built, immediately.",
-        "In 2024 the war made the geography decision for me: the college where I studied in Odesa was destroyed. I moved to the Netherlands, enrolled in software development at MBO Amersfoort, and kept building — in a new country, in a new language. That's when extropy stopped being a nice word and became the way I work: order that grows, against everything pulling the other way."
+        "At thirteen I found The Last of Us, and it rewired me. It wasn't just a game. It was proof that software could carry a story that hits like a film. I wanted to build worlds like that, so I learned the language they're built in: C++.",
+        "C++ took me to Unreal Engine, C# took me to Unity, and a series of pet projects taught me what engines teach best: how complex systems fit together, and why they fall apart. Somewhere between those projects I noticed where my time actually went. Not gameplay, but interfaces, logic, structure. The web had all of that, plus something games didn't: real people using what you built, immediately.",
+        "In 2024 the war made the geography decision for me: the college where I studied in Odesa was destroyed. I moved to the Netherlands, enrolled in software development at MBO Amersfoort, and kept building in a new country and a new language. That's when extropy stopped being a nice word and became the way I work: order that grows, against everything pulling the other way."
       ]
     },
     "timeline": {
@@ -182,18 +198,18 @@
         {
           "period": "2024",
           "title": "Odesa → Amersfoort",
-          "body": "My college in Odesa is destroyed in the war. I move to the Netherlands and continue as a software-development student at MBO Amersfoort — without missing a beat."
+          "body": "My college in Odesa is destroyed in the war. I move to the Netherlands and continue as a software development student at MBO Amersfoort, without missing a beat."
         },
         {
-          "period": "2025 — now",
+          "period": "Now",
           "title": "extropy",
-          "body": "A commerce-grade fullstack project shipped end to end — payments, auth, cart, all of it. The brand gets its name, its lotus, and this site."
+          "body": "Shipped projects: an e-commerce store, a booking platform, a delivery service, product sites. The brand gets its name, its lotus, and this site."
         }
       ]
     },
     "languages": {
       "heading": "Four languages, daily",
-      "intro": "Communication is part of engineering. I work with clients directly in all four — no translator in the middle.",
+      "intro": "Communication is part of engineering. I work with clients directly in all four, no translator in the middle.",
       "items": [
         { "name": "Ukrainian", "level": "native" },
         { "name": "Russian", "level": "native" },
@@ -202,14 +218,14 @@
       ]
     },
     "why": {
-      "heading": "Why “extropy”",
-      "body": "Entropy is decay — systems drifting toward disorder. Extropy is the opposite pull: intelligence and deliberate effort making things better over time. Five principles, five petals on the lotus — and the standard every project gets held to."
+      "heading": "Why \"extropy\"",
+      "body": "Entropy is decay: systems drifting toward disorder. Extropy is the opposite pull, intelligence and deliberate effort making things better over time. Five principles, five petals on the lotus, and the standard every project gets held to."
     }
   },
   "contact": {
     "label": "Contact",
     "title": "Tell me what you're building",
-    "lede": "A shop that has to sell, an app that has to work, or an idea that needs an honest technical opinion — write to me in any of my four languages.",
+    "lede": "A shop that has to sell, an app that has to work, or an idea that needs an honest technical opinion. Write to me in any of my four languages.",
     "emailLabel": "Email",
     "availability": "Currently open for new projects",
     "copy": "Copy",
@@ -220,11 +236,11 @@
       "items": [
         {
           "title": "We talk",
-          "body": "You describe the goal in plain words. I ask the questions that surface the real requirements — usually more useful than the brief itself."
+          "body": "You describe the goal in plain words. I ask the questions that surface the real requirements, which is usually more useful than the brief itself."
         },
         {
           "title": "You get a plan",
-          "body": "Scope, stages, an honest timeline, and what each stage costs. If something is risky, you hear it now — not in week six."
+          "body": "Scope, stages, an honest timeline, and what each stage costs. If something is risky, you hear it now, not in week six."
         },
         {
           "title": "I build, you watch",
@@ -232,7 +248,7 @@
         },
         {
           "title": "Launch isn't goodbye",
-          "body": "You get a documented, maintainable codebase — and I stay around to make sure it survives contact with real users."
+          "body": "You get a documented, maintainable codebase, and I stay around to make sure it survives contact with real users."
         }
       ]
     }

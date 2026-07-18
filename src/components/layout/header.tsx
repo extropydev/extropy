@@ -8,6 +8,7 @@ import { cn } from "@/lib/cn";
 import { LocaleSwitcher } from "./locale-switcher";
 
 const NAV_ITEMS = [
+  { href: "/work", key: "work" },
   { href: "/notes", key: "notes" },
   { href: "/about", key: "about" },
   { href: "/contact", key: "contact" },

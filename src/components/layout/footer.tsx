@@ -33,6 +33,7 @@ export async function Footer() {
                                 {(
                                     [
                                         {href: "/", key: "home"},
+                                        {href: "/work", key: "work"},
                                         {href: "/notes", key: "notes"},
                                         {href: "/about", key: "about"},
                                         {href: "/contact", key: "contact"},
