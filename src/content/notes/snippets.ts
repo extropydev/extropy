@@ -3,7 +3,7 @@ import type { NoteSlug } from "./types";
 /**
  * Code samples are intentionally short: each one shows the single decision
  * that makes the whole approach safe. Comments are in English in every locale
- * — the way real code is written.
+ * because that is how real code is written.
  */
 export const noteSnippets: Record<NoteSlug, string> = {
   payments: `export async function POST(req: Request) {
@@ -53,7 +53,7 @@ create policy "orders are written by the server only"
 const verified = await revalidateCart(items); // fresh prices, real stock`,
 
   responsive: `:root {
-  /* Type flows between 17px and 21px — no breakpoint jumps */
+  /* Type flows between 17px and 21px, no breakpoint jumps */
   --text-body: clamp(1.0625rem, 0.95rem + 0.5vw, 1.3125rem);
 }
 
@@ -61,7 +61,7 @@ const verified = await revalidateCart(items); // fresh prices, real stock`,
   container-type: inline-size;
 }
 
-/* The card adapts to the space it gets —
+/* The card adapts to the space it gets:
    sidebar, grid cell, or full width */
 @container (min-width: 28rem) {
   .product-card__layout {
