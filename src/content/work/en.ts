@@ -172,4 +172,45 @@ export const workEn: WorkDictionary = {
             "saas-map": "Global scale section with a dotted world map",
         },
     },
+    houseDecor: {
+        type: "E-commerce store",
+        tagline:
+            "A full-fledged online store: catalog, cart, checkout, user accounts, and returns.",
+        overview: [
+            "A fully functional web store prototype for home decor"
+        ],
+        built: [
+            {
+                title: "Catalog with real filters",
+                body: "Categories, sizes, colors, patterns, prices, and discounts. Filters can be combined and are stored in the URL, making it easy to share any filtered view via a direct link.",
+            },
+            {
+                title: "Cart & checkout",
+                body: "The cart persists across page refreshes and syncs with the user's account upon logging in. Before payment, the server re-checks prices and stock levels so customers never pay based on outdated data.",
+            },
+            {
+                title: "User accounts & OAuth",
+                body: "Log in via Google, Facebook, or email. Sessions are stored in httpOnly cookies, and the database enforces row-level security across every table.",
+            },
+            {
+                title: "Favorites & promo",
+                body: "Wishlists, promo banners, and discount codes. Everyday mechanics that subtly drive sales.",
+            },
+        ],
+        craft: [
+            {
+                title: "Fast on mid-range phones",
+                body: "Server components and strict image optimization keep the catalog fast on real-world devices, not just on a developer's laptop.",
+            },
+            {
+                title: "State that behaves predictably",
+                body: "Zustand handles the shopping cart, React Query handles server data. Two lightweight tools, each doing its job well.",
+            },
+        ],
+        captions: {
+            "clothes-catalog": "Category page with combinable filters",
+            "clothes-auth": "Login via email or OAuth on a single screen",
+        },
+        note: "Product photos in the prototype are stock images. The engineering behind them is real.",
+    },
 };

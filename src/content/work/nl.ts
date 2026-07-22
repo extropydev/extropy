@@ -172,4 +172,46 @@ export const workNl: WorkDictionary = {
             "saas-map": "Sectie wereldwijde schaal met gestippelde wereldkaart",
         },
     },
+
+    houseDecor: {
+        type: "Webshop",
+        tagline:
+            "Een volwaardige webwinkel: catalogus, winkelwagen, afrekenen, accounts en retourzendingen.",
+        overview: [
+            "Een volledig werkend prototype van een webshop voor woondecoratie"
+        ],
+        built: [
+            {
+                title: "Catalogus met echte filters",
+                body: "Categorieën, maten, kleuren, patronen, prijzen en kortingen. Filters kunnen worden gecombineerd en worden opgeslagen in de URL, zodat je elke gefilterde weergave eenvoudig kunt delen via een link.",
+            },
+            {
+                title: "Winkelwagen & afrekenen",
+                body: "De winkelwagen blijft behouden na het vernieuwen van de pagina en synchroniseert met het account na het inloggen. Vóór de betaling controleert de server de prijzen en voorraad opnieuw, zodat de klant nooit betaalt op basis van verouderde gegevens.",
+            },
+            {
+                title: "Accounts & OAuth",
+                body: "Inloggen via Google, Facebook of e-mail. Sessies worden opgeslagen in httpOnly-cookies en de database past row-level security toe op elke tabel.",
+            },
+            {
+                title: "Favorieten & promo's",
+                body: "Verlanglijstjes, banneradvertenties en kortingscodes. Alledaagse functies die ongemerkt de verkoop stimuleren.",
+            },
+        ],
+        craft: [
+            {
+                title: "Snel op gemiddelde telefoons",
+                body: "Server components en strikte afbeeldingoptimalisatie houden de catalogus snel op echte apparaten, niet alleen op de laptop van de ontwikkelaar.",
+            },
+            {
+                title: "State die zich netjes gedraagt",
+                body: "Zustand beheert de winkelwagen, React Query de servergegevens. Twee compacte tools die elk hun werk goed doen.",
+            },
+        ],
+        captions: {
+            "clothes-catalog": "Categoriepagina met combineerbare filters",
+            "clothes-auth": "Inloggen via e-mail of OAuth op één scherm",
+        },
+        note: "Productfoto's in het prototype zijn afkomstig uit stock-bibliotheken. De techniek erachter is echt.",
+    },
 };

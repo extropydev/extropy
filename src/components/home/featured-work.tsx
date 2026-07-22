@@ -41,7 +41,7 @@ export async function FeaturedWork({locale}: { locale: Locale }) {
                     <WorkCard slug={flagship} caseData={cases[flagship]} wide priority/>
                 </Reveal>
                 <div className="grid gap-6 lg:grid-cols-3">
-                    {rest.map((slug, position) => (
+                    {rest.slice(0,3).map((slug, position) => (
                         <Reveal key={slug} delay={(position % 3) * 0.08} className="flex">
                             <WorkCard slug={slug} caseData={cases[slug]} className="w-full"/>
                         </Reveal>

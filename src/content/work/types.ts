@@ -3,6 +3,7 @@ export const WORK_SLUGS = [
     "cosmetology",
     "sushi",
     "saas",
+    "houseDecor",
 ] as const;
 
 export type WorkSlug = (typeof WORK_SLUGS)[number];

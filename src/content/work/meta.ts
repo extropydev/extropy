@@ -52,14 +52,15 @@ export const workMeta: Record<WorkSlug, WorkMeta> = {
         shots: ["saas-map"],
         surface: "bg-[#eceafb]",
     },
-    // houseDecor: {
-    //     name: "House Decor Store",
-    //     url: "https://saaslandingpage-tau.vercel.app/",
-    //     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    //     hero: "house decor hero page",
-    //     shots: ["test"],
-    //     surface: "bg-[#eceafb]",
-    // }
+    houseDecor: {
+        name: "House Decor Store",
+        url: "https://saaslandingpage-tau.vercel.app/",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        hero: "clothes-home",
+        shots: ["clothes-catalog", "clothes-auth"],
+        flagship: true,
+        surface: "bg-[#eceafb]",
+    }
 
 };
 
