@@ -48,7 +48,7 @@ export const workMeta: Record<WorkSlug, WorkMeta> = {
     },
     houseDecor: {
         name: "House Decor Store",
-        url: "https://saaslandingpage-tau.vercel.app/",
+        url: "https://house-decor-nu.vercel.app/",
         stack: ["Next.js", "TypeScript", "Tailwind CSS"],
         hero: "decor-home",
         shots: ["decor-catalog", "decor-product-page", "decor-about"],
