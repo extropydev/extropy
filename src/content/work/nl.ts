@@ -209,9 +209,11 @@ export const workNl: WorkDictionary = {
             },
         ],
         captions: {
-            "clothes-catalog": "Categoriepagina met combineerbare filters",
-            "clothes-auth": "Inloggen via e-mail of OAuth op één scherm",
+            "decor-about": "Sectie over de winkel",
+            "decor-catalog": "Volledig werkende catalogus met filteropties",
+            "decor-product-page": "Handige productpagina waar je alle informatie over een specifiek product kunt bekijken",
         },
+
         note: "Productfoto's in het prototype zijn afkomstig uit stock-bibliotheken. De techniek erachter is echt.",
     },
 };

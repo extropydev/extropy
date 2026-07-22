@@ -208,9 +208,11 @@ export const workEn: WorkDictionary = {
             },
         ],
         captions: {
-            "clothes-catalog": "Category page with combinable filters",
-            "clothes-auth": "Login via email or OAuth on a single screen",
+            "decor-about": "About the store section",
+            "decor-catalog": "Fully functional catalog with filtering",
+            "decor-product-page": "Convenient product page where you can view all information about a specific item",
         },
+
         note: "Product photos in the prototype are stock images. The engineering behind them is real.",
     },
 };

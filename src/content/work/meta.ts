@@ -1,19 +1,13 @@
 import type {WorkSlug} from "./types";
 
 interface WorkMeta {
-    /** Project brand name, shown as-is in every locale. */
     name: string;
     url: string;
     stack: string[];
-    /** Hero screenshot base name inside /public/work. */
     hero: string;
-    /** Additional screenshots for the case gallery. */
     shots: string[];
-    /** Biggest, most complete project; gets the wide card. */
     flagship?: boolean;
-    /** Dark-themed presentation (sushi). */
     dark?: boolean;
-    /** Card surface classes per project, tinted after its own palette. */
     surface: string;
 }
 
@@ -56,12 +50,11 @@ export const workMeta: Record<WorkSlug, WorkMeta> = {
         name: "House Decor Store",
         url: "https://saaslandingpage-tau.vercel.app/",
         stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-        hero: "clothes-home",
-        shots: ["clothes-catalog", "clothes-auth"],
+        hero: "decor-home",
+        shots: ["decor-catalog", "decor-product-page", "decor-about"],
         flagship: true,
-        surface: "bg-[#eceafb]",
+        surface: "bg-[#faedcd]",
     }
-
 };
 
 export function workImage(base: string) {
