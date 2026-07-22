@@ -32,7 +32,7 @@ export const site: ISite = {
             key: "instagram",
             icon: <InstagramSvg />,
             label: "Instagram",
-            handle: "@extropy.dev",
+            handle: "@sauvignonblqnc",
             href: "https://www.instagram.com/sauvignonblqnc",
         },
         {
