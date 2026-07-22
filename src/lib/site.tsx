@@ -2,6 +2,7 @@ import InstagramSvg from "@/components/ui/svg-icons/InstagramSvg";
 import { ReactNode } from "react";
 import TikTokSvg from "@/components/ui/svg-icons/TikTokSvg";
 import GitHubSvg from "@/components/ui/svg-icons/GitHubSvg";
+import TelgeramSvg from "@/components/ui/svg-icons/TelegramSvg";
 
 interface ISocials {
     key: string;
@@ -42,5 +43,13 @@ export const site: ISite = {
             handle: "kukarachass",
             href: "https://github.com/kukarachass",
         },
+        {
+            key: "telegram",
+            icon: <TelgeramSvg/>,
+            label: "Telegram",
+            handle: "@extropydev",
+            href: "https://t.me/extropydev"
+        }
+
     ],
 };
