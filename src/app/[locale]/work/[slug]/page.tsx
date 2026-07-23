@@ -101,7 +101,6 @@ export default async function CasePage({
                     ))}
                 </div>
             </Reveal>
-
             {/* Hero screenshot */}
             <Reveal className="mt-12">
                 <BrowserFrame

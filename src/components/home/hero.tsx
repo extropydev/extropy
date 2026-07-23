@@ -60,7 +60,7 @@ export async function Hero() {
           <Reveal delay={0.24}>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <Link
-                href="/notes"
+                href="/work"
                 className="group inline-flex items-center gap-2.5 rounded-[6px] bg-ink px-6 py-3.5 text-sm font-bold text-paper transition-colors duration-300 hover:bg-accent"
               >
                 {t("ctaPrimary")}
