@@ -104,21 +104,21 @@ export default async function AboutPage({
           <p className="mt-4 leading-relaxed text-muted">
             {t("languages.intro")}
           </p>
-          <div className="mt-7 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            {languages.map((language) => (
-              <div
-                key={language.name}
-                className="petal-card-sm petal-bloom bg-paper-raised p-5"
-              >
-                <p className="font-display text-base font-bold">
-                  {language.name}
-                </p>
-                <p className="mt-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-accent">
-                  {language.level}
-                </p>
-              </div>
-            ))}
-          </div>
+            <div className="mt-7 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {languages.map((language) => (
+                    <div
+                        key={language.name}
+                        className="petal-card-sm petal-bloom min-w-0 bg-paper-raised p-5"
+                    >
+                        <p className="break-words font-display text-base font-bold">
+                            {language.name}
+                        </p>
+                        <p className="mt-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-accent">
+                            {language.level}
+                        </p>
+                    </div>
+                ))}
+            </div>
         </Reveal>
 
         {/* Why "extropy" */}
