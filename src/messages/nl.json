@@ -12,7 +12,7 @@
   "nav": {
     "home": "Home",
     "work": "Werk",
-    "notes": "Veldnotities",
+    "notes": "Notities",
     "about": "Over mij",
     "contact": "Contact",
     "openMenu": "Menu openen",
@@ -86,7 +86,7 @@
       ]
     },
     "notes": {
-      "label": "Veldnotities",
+      "label": "Notities",
       "title": "De vijf dingen waar klanten wakker van liggen",
       "intro": "Elke notitie neemt een echte angst, zoals verloren betalingen, gelekte accounts of verdwijnende winkelwagens, en laat precies zien hoe ik er een non-issue van maak.",
       "viewAll": "Alle vijf notities"
@@ -142,7 +142,7 @@
     "home": {
       "label": "Uitgelicht werk",
       "title": "Echte projecten om doorheen te klikken",
-      "intro": "Geen mockups en geen templates. Live producten met winkelwagens, accounts, boekingen en betalingen. Open er een en probeer het zelf.",
+      "intro": "Live producten met winkelwagens, accounts, boekingen en betalingen. Open er een en probeer het zelf.",
       "viewAll": "Alle cases"
     },
     "viewCase": "Case",
@@ -155,12 +155,12 @@
     "nextProject": "Volgend project"
   },
   "notes": {
-    "label": "Veldnotities",
+    "label": "Notities",
     "title": "Wat er mis kan gaan, en waarom het niet gebeurt",
     "intro": "Screenshots kan iedereen laten zien. Deze notities tonen oordeelsvermogen: vijf faalscenario's die onlinebedrijven echt geld kosten, en de techniek die elk ervan in mijn projecten tot een non-issue maakt.",
     "outro": "Deze vijf notities zijn niet alles wat ik doe. Ze zijn een staaltje van hoe ik denk, en dezelfde discipline geldt voor alles wat jouw project op me afvuurt.",
     "backToNotes": "Alle notities",
-    "noteLabel": "Veldnotitie",
+    "noteLabel": "Notitie",
     "worryLabel": "De zorg",
     "codeHeading": "Hoe het eruitziet in code",
     "nextNote": "Volgende notitie"
