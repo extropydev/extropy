@@ -47,7 +47,52 @@ export const workEn: WorkDictionary = {
         },
         note: "Product photos in this prototype are stock placeholders. The engineering underneath is the real thing.",
     },
-
+    dela: {
+        type: "E-commerce",
+        tagline:
+            "A boutique fashion storefront with a full customer flow and an admin panel to run it — built entirely on mock data.",
+        overview: [
+            "A prototype for a Ukrainian womenswear brand, built to be shown to a real client rather than sketched in an afternoon. Catalog, product pages, cart, checkout, a customer account and a full admin panel — every screen a fashion store needs, with none of the default AI-template look.",
+            "Everything runs on mock data with no backend: state persists in the browser, so a demo survives a refresh, and an admin can walk a client through an order's entire pipeline live, right in the table.",
+        ],
+        built: [
+            {
+                title: "Catalog with combinable filters",
+                body: "Size, colour, price range, fabric and collection filter together and stay in sync with stock, with quick-add straight from the product card.",
+            },
+            {
+                title: "Cart and a three-step checkout",
+                body: "Contacts, delivery and payment as separate steps, with Nova Poshta branch, postomat or courier selection, promo codes and a free-shipping progress bar.",
+            },
+            {
+                title: "Customer account",
+                body: "Order history with a visual status timeline and tracking number, saved delivery addresses, a bonus balance and a wishlist that survives a session.",
+            },
+            {
+                title: "Admin panel",
+                body: "Order status changes inline, right in the table — no click-through required — backed by a dashboard with a revenue chart and low-stock alerts.",
+            },
+        ],
+        craft: [
+            {
+                title: "No UI library, no default look",
+                body: "Every component — buttons, dropdowns, the size-guide modal — is built by hand on Tailwind tokens, down to a bespoke SVG wordmark cut from the client's logo file.",
+            },
+            {
+                title: "State that survives a refresh",
+                body: "Cart, wishlist and admin status overrides persist to localStorage, so a live walkthrough never loses its place.",
+            },
+            {
+                title: "Audited on real phone widths, not just resized",
+                body: "Every route was scripted for horizontal overflow at 320–768px, catching a menu clipped by a backdrop-filter container and a sidebar forcing a 600px scroll before either reached a client.",
+            },
+        ],
+        captions: {
+            "dela-catalog": "Catalog page with combinable filters and live stock indicators",
+            "dela-admin": "Admin order view — inline status changes with a visual pipeline and Nova Poshta tracking",
+        },
+        note: "A frontend prototype: there is no backend, database or payment processor behind it. Products, orders and customers are mock data, and admin changes live only in the browser's storage.",
+    },
     cosmetology: {
         type: "Booking platform",
         tagline:
@@ -93,7 +138,6 @@ export const workEn: WorkDictionary = {
             "cosmetology-results": "Before and after sliders in the results section",
         },
     },
-
     sushi: {
         type: "Restaurant & delivery",
         tagline:
@@ -135,7 +179,6 @@ export const workEn: WorkDictionary = {
             "sushi-story": "Story section in English, one toggle away from French",
         },
     },
-
     saas: {
         type: "Marketing site",
         tagline:

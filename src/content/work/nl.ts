@@ -136,6 +136,53 @@ export const workNl: WorkDictionary = {
         },
     },
 
+    dela: {
+        type: "E-commerce",
+        tagline:
+            "Een kledingwinkel met een volledige klantflow en een adminpaneel om die te runnen — volledig op mockdata gebouwd.",
+        overview: [
+            "Een prototype voor een Oekraïens damesmodemerk, gebouwd om aan een echte klant te laten zien, niet om in een middagje in elkaar te zetten. Catalogus, productpagina's, winkelwagen, afrekenen, een klantaccount en een volwaardig adminpaneel — alles wat een kledingwinkel nodig heeft, zonder de herkenbare AI-sjabloonlook.",
+            "Alles draait op mockdata zonder backend: de status blijft bewaard in de browser, dus een demo overleeft een refresh, en een beheerder kan een bestelling live, midden in de tabel, door de hele statuspijplijn leiden terwijl de klant meekijkt.",
+        ],
+        built: [
+            {
+                title: "Catalogus met combineerbare filters",
+                body: "Maat, kleur, prijsklasse, stof en collectie filteren samen en blijven gesynchroniseerd met de voorraad, met snel toevoegen aan de winkelwagen rechtstreeks vanaf de productkaart.",
+            },
+            {
+                title: "Winkelwagen en afrekenen in drie stappen",
+                body: "Contactgegevens, bezorging en betaling als aparte stappen, met keuze uit Nova Poshta-afhaalpunt, pakketautomaat of koerier, kortingscodes en een voortgangsbalk naar gratis verzending.",
+            },
+            {
+                title: "Klantaccount",
+                body: "Bestelgeschiedenis met een visuele statustijdlijn en trackingnummer, opgeslagen bezorgadressen, een bonussaldo en een verlanglijst die de sessie overleeft.",
+            },
+            {
+                title: "Adminpaneel",
+                body: "Bestelstatus wijzigen kan rechtstreeks in de tabel, zonder door te klikken — bovenop een dashboard met een omzetgrafiek en meldingen bij lage voorraad.",
+            },
+        ],
+        craft: [
+            {
+                title: "Geen UI-library, geen standaardlook",
+                body: "Elk onderdeel — knoppen, dropdowns, de maattabel-modal — is met de hand gebouwd op Tailwind-tokens, tot en met een op maat gemaakt SVG-logo, uitgesneden uit het logobestand van de klant.",
+            },
+            {
+                title: "Status die een refresh overleeft",
+                body: "Winkelwagen, verlanglijst en statuswijzigingen in het adminpaneel worden opgeslagen in localStorage, zodat een livedemonstratie nooit haar plek kwijtraakt.",
+            },
+            {
+                title: "Getest op echte telefoonbreedtes, niet alleen verkleind",
+                body: "Elke route is met een script gecontroleerd op horizontale overflow bij 320–768px — zo kwamen een menu dat werd afgesneden door een backdrop-filter-container en een zijbalk die de pagina 600px opzij duwde aan het licht, nog vóórdat de klant ze zag.",
+            },
+        ],
+        captions: {
+            "dela-catalog": "Catalogus met combineerbare filters en live voorraadindicatoren",
+            "dela-admin": "Bestelling in het adminpaneel — statuswijziging rechtstreeks in de tabel, visuele pijplijn en Nova Poshta-tracking",
+        },
+        note: "Een frontend-prototype: er zit geen backend, database of betaalprovider achter. Producten, bestellingen en klanten zijn mockdata, en wijzigingen in het adminpaneel bestaan alleen in de opslag van de browser.",
+    },
+
     saas: {
         type: "Marketingsite",
         tagline:

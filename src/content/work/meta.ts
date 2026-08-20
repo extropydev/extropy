@@ -21,6 +21,15 @@ export const workMeta: Record<WorkSlug, WorkMeta> = {
         flagship: true,
         surface: "bg-paper-raised",
     },
+    dela: {
+        name: "Dela Clothes",
+        url: "https://dela-clothes.vercel.app/",
+        stack: ["Next.js", "Tailwind.css", "Zustand"],
+        hero: "dela-home",
+        shots: ["dela-catalog", "dela-produc"],
+        flagship: true,
+        surface: "bg-[#ffe5ec]",
+    },
     cosmetology: {
         name: "Lumé Studio",
         url: "https://cosmetology-gamma.vercel.app/",
