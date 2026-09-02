@@ -263,4 +263,58 @@ export const workNl: WorkDictionary = {
 
         note: "Productfoto's in het prototype zijn afkomstig uit stock-bibliotheken. De techniek erachter is echt.",
     },
+    ldStudio: {
+        type: "Bedrijfswebsite",
+        tagline:
+            "Een site voor een koplampstudio: diensten, een sleepbare voor-en-na-vergelijking, een werkgalerij en lokale SEO.",
+        overview: [
+            "Een productiesite voor een autoverlichtingsstudio in Odesa die koplampen repareert, restaureert en ombouwt — van het opnieuw afdichten van een beslagen behuizing tot een volledig op maat gemaakte Bi-LED.",
+            "Alles op de pagina is van de studio zelf: foto's uit hun eigen werkplaats, hun diensten, hun reviews. De visuele richting komt regelrecht uit die foto's — het magenta, violet en cyaan van de RGB-ringen die ze in koplampen bouwen.",
+        ],
+        built: [
+            {
+                title: "Een voor-en-na die je echt versleept",
+                body: "Een verticale scheidingslijn die je met de muis, een vinger of de pijltjestoetsen verplaatst. De eerste keer dat het blok in beeld scrolt, demonstreert de lijn zichzelf even, zodat niemand hoeft te raden of het interactief is.",
+            },
+            {
+                title: "Diensten als lijst, niet als kaartenraster",
+                body: "Zeven werkgebieden. Op desktop volgt de foto rechts de regel waar je overheen zweeft; op mobiel wordt diezelfde lijst een accordeon met de foto erin.",
+            },
+            {
+                title: "Galerij met een eigen werkpagina",
+                body: "De homepage toont een vast aantal foto's, zodat het metselwerkraster nooit eindigt in een lege kolom; de rest staat op een aparte pagina achter één knop. Schermvullende weergave met pijltjesnavigatie.",
+            },
+            {
+                title: "Lokale SEO",
+                body: "AutoRepair- en FAQPage-structured data met de echte coördinaten van de studio, sitemap, robots, een gegenereerde OG-afbeelding en Oekraïense teksten geschreven rond de zoektermen die mensen daadwerkelijk gebruiken.",
+            },
+        ],
+        craft: [
+            {
+                title: "Eén map om de hele site te onderhouden",
+                body: "Diensten, werk, reviews, FAQ, telefoonnummer, adres — het staat allemaal in src/content. Een foto toevoegen is één object aan een array toevoegen; in de opmaak staat geen enkele regel tekst.",
+            },
+            {
+                title: "Het eerste scherm wacht niet op JavaScript",
+                body: "De hero is een servercomponent en zijn entree draait op CSS. De kop, de pitch en het telefoonnummer zijn zichtbaar, ook in een achtergrondtab of vóór hydratie.",
+            },
+            {
+                title: "Animatie die geen frames kost",
+                body: "Accordeons animeren grid-template-rows onder contain: layout in plaats van height, waardoor het openen van een sectie de rest van de pagina niet langer opnieuw laat berekenen. Scroll-onthullingen zijn CSS-transities, aangestuurd door één gedeelde IntersectionObserver.",
+            },
+            {
+                title: "Met de hand gebouwd, zonder UI-library",
+                body: "De vergelijkingsslider, de lightbox, de accordeons en het hele systeem van spectrumverlopen zijn vanaf nul geschreven op Tailwind-tokens.",
+            },
+        ],
+        captions: {
+            "ld-hero": "Eerste scherm — achter de kop staat echt werk van de studio",
+            "ld-services": "Diensten: de foto rechts volgt de regel onder de cursor",
+            "ld-before-after": "Voor-en-na met een versleepbare scheidingslijn",
+            "ld-works": "Werkgalerij met schermvullende weergave",
+        },
+        note: "Anders dan de prototypes hierboven draait dit project voor een echte klant: echte foto's, echte diensten, echte contactgegevens.",
+    },
+
+
 };

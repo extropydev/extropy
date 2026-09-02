@@ -63,7 +63,17 @@ export const workMeta: Record<WorkSlug, WorkMeta> = {
         shots: ["decor-catalog", "decor-product-page", "decor-about"],
         flagship: true,
         surface: "bg-[#faedcd]",
-    }
+    },
+    ldStudio: {
+        name: "L-D Studio",
+        url: "https://l-d.studio/",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        hero: "ld-home",
+        shots: ["ld-before-after", "ld-how-work"],
+        dark: true,
+        flagship: true,
+        surface: "bg-ink",
+    },
 };
 
 export function workImage(base: string) {

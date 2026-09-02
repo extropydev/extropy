@@ -258,4 +258,57 @@ export const workEn: WorkDictionary = {
 
         note: "Product photos in the prototype are stock images. The engineering behind them is real.",
     },
+    ldStudio: {
+        type: "Local business site",
+        tagline:
+            "A site for a car headlight studio: services, a drag-to-compare before/after, a work gallery and local SEO.",
+        overview: [
+            "A production site for an automotive lighting workshop in Odesa that repairs, restores and customises headlights — from resealing a fogged housing to a fully custom Bi-LED build.",
+            "Everything on the page belongs to the studio: photos shot in their own bay, their services, their reviews. The visual direction came out of those photos — the magenta, violet and cyan of the RGB rings they build into headlights.",
+        ],
+        built: [
+            {
+                title: "A before/after you actually drag",
+                body: "A vertical divider you pull with a mouse, a finger or the arrow keys. The first time it scrolls into view it runs a short demo of itself, so nobody has to guess it's interactive.",
+            },
+            {
+                title: "Services as a list, not a card grid",
+                body: "Seven areas of work. On desktop the photo on the right follows whichever row you hover; on mobile the same list turns into an accordion with the photo inside it.",
+            },
+            {
+                title: "Gallery with its own works page",
+                body: "The homepage shows a fixed number of shots so the masonry grid never trails off into an empty column; the rest live on a separate page behind one button. Full-screen viewer with arrow-key navigation.",
+            },
+            {
+                title: "Local SEO",
+                body: "AutoRepair and FAQPage structured data with the studio's real coordinates, sitemap, robots, a generated OG image, and Ukrainian copy written around the phrases people actually search for.",
+            },
+        ],
+        craft: [
+            {
+                title: "One folder to maintain the whole site",
+                body: "Services, works, reviews, FAQ, phone, address — all of it lives in src/content. Adding a photo means adding one object to an array; there isn't a single line of copy in the markup.",
+            },
+            {
+                title: "The first screen doesn't wait for JavaScript",
+                body: "The hero is a server component and its entrance runs on CSS. The headline, the pitch and the phone number are visible even in a background tab or before hydration.",
+            },
+            {
+                title: "Animation that doesn't cost frames",
+                body: "Accordions animate grid-template-rows under contain: layout instead of height, so opening a section no longer reflows the page below it. Scroll reveals are CSS transitions driven by a single shared IntersectionObserver.",
+            },
+            {
+                title: "Hand-built, no UI library",
+                body: "The compare slider, the lightbox, the accordions and the whole spectrum-gradient system are written from scratch on Tailwind tokens.",
+            },
+        ],
+        captions: {
+            "ld-hero": "First screen — the studio's own work behind the headline",
+            "ld-services": "Services: the photo on the right follows the hovered row",
+            "ld-before-after": "Before/after with a draggable divider",
+            "ld-works": "Work gallery with a full-screen viewer",
+        },
+        note: "Unlike the prototypes above, this one is live for a real client: real photos, real services, real contact details.",
+    },
+
 };

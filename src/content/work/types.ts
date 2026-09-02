@@ -5,6 +5,7 @@ export const WORK_SLUGS = [
     "sushi",
     "saas",
     "houseDecor",
+    "ldStudio",
 ] as const;
 
 export type WorkSlug = (typeof WORK_SLUGS)[number];

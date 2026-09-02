@@ -1,132 +1,65 @@
 "use client";
 
-import { useState } from "react";
-import { useTranslations } from "next-intl";
-import { Reveal } from "@/components/ui/reveal";
-import { SectionLabel } from "@/components/ui/section-label";
-import { cn } from "@/lib/cn";
+import {useTranslations} from "next-intl";
+import {Reveal} from "@/components/ui/reveal";
+import {SectionLabel} from "@/components/ui/section-label";
 
 interface StackItem {
-  name: string;
-  role: string;
-  why: string;
+    name: string;
+    role: string;
+    why: string;
 }
 
 /**
- * The stack as oversized hollow type: each tool fills with ink on hover,
- * and its "why" unfolds beneath. No boxes, no grid — pure typography.
+ * Quiet and fully open: every tool is set as a small entry on a ruled grid,
+ * nothing hidden behind a hover. Two columns on desktop, one on a phone,
+ * with the petal mark as the only ornament.
  */
 export function StackSection() {
-  const t = useTranslations("home.stack");
-  const items = t.raw("items") as StackItem[];
-  const [active, setActive] = useState<number | null>(null);
+    const t = useTranslations("home.stack");
+    const items = t.raw("items") as StackItem[];
 
-  return (
-    <section className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-      <Reveal>
-        <SectionLabel>{t("label")}</SectionLabel>
-        <h2 className="mt-6 max-w-2xl text-balance font-display text-2xl font-bold leading-snug tracking-tight sm:text-4xl">
-          {t("title")}
-        </h2>
-        <p className="mt-4 max-w-xl text-pretty leading-relaxed text-muted">
-          {t("intro")}
-        </p>
-      </Reveal>
+    return (
+        <section className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+            <Reveal>
+                <div className="max-w-3xl">
+                    <SectionLabel>{t("label")}</SectionLabel>
+                    <h2 className="mt-6 text-balance font-display text-2xl font-bold leading-snug tracking-tight sm:text-4xl">
+                        {t("title")}
+                    </h2>
+                    <p className="mt-4 max-w-xl text-pretty leading-relaxed text-muted">
+                        {t("intro")}
+                    </p>
+                </div>
+            </Reveal>
 
-      <Reveal className="mt-12 sm:mt-16" delay={0.1}>
-        <ul onMouseLeave={() => setActive(null)}>
-          {items.map((item, index) => {
-            const isActive = active === index;
-            return (
-              <li key={item.name}>
-                <button
-                  type="button"
-                  aria-expanded={isActive}
-                  onMouseEnter={() => setActive(index)}
-                  onFocus={() => setActive(index)}
-                  // A tap fires mouseenter first, then click — a toggle here
-                  // would instantly close what the tap just opened.
-                  onClick={() => setActive(index)}
-                  className="block w-full cursor-pointer py-3 text-left sm:py-2.5"
-                >
-                  {/* Meta row on phones: number + role above the name */}
-                  <span className="mb-1.5 flex items-center gap-3 sm:hidden">
-                    <span
-                      aria-hidden="true"
-                      className={cn(
-                        "text-xs font-bold tracking-widest transition-colors duration-300",
-                        isActive ? "text-accent" : "text-line-strong",
-                      )}
-                    >
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <span
-                      className={cn(
-                        "petal-chip px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] transition-all duration-300",
-                        isActive
-                          ? "bg-accent text-paper"
-                          : "bg-paper-raised text-muted",
-                      )}
-                    >
-                      {item.role}
-                    </span>
-                  </span>
+            <Reveal className="mt-10 sm:mt-14" delay={0.1}>
+                <ul className="grid grid-cols-1 border-t border-line sm:grid-cols-2 sm:gap-x-14">
+                    {items.map((item) => (
+                        <li
+                            key={item.name}
+                            className="group border-b border-line py-6 sm:py-7"
+                        >
+                            <div className="flex items-baseline gap-3">
+                                <span
+                                    aria-hidden="true"
+                                    className="h-2 w-2 shrink-0 translate-y-[-0.15rem] rounded-[6px_1px_6px_1px] bg-line-strong transition-colors duration-300 group-hover:bg-accent"
+                                />
+                                <h3 className="font-display text-lg font-extrabold tracking-tight sm:text-xl">
+                                    {item.name}
+                                </h3>
+                                <span className="ml-auto shrink-0 text-sm text-muted">
+                                    {item.role}
+                                </span>
+                            </div>
 
-                  <span className="flex items-baseline gap-x-5">
-                    <span
-                      aria-hidden="true"
-                      className={cn(
-                        "hidden w-8 shrink-0 text-xs font-bold tracking-widest transition-colors duration-300 sm:inline-block",
-                        isActive ? "text-accent" : "text-line-strong",
-                      )}
-                    >
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <span
-                      className={cn(
-                        "text-hollow min-w-0 break-words font-display text-[clamp(1.5rem,7vw,3.9rem)] font-extrabold leading-[1.15] tracking-tight",
-                        isActive && "!text-ink",
-                      )}
-                      style={
-                        isActive
-                          ? { WebkitTextStrokeColor: "transparent" }
-                          : undefined
-                      }
-                    >
-                      {item.name}
-                    </span>
-                    <span
-                      className={cn(
-                        "petal-chip hidden px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] transition-all duration-300 sm:inline-block",
-                        isActive
-                          ? "bg-accent text-paper"
-                          : "bg-paper-raised text-muted",
-                      )}
-                    >
-                      {item.role}
-                    </span>
-                  </span>
-
-                  <span
-                    className={cn(
-                      "grid transition-[grid-template-rows,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
-                      isActive
-                        ? "grid-rows-[1fr] opacity-100"
-                        : "grid-rows-[0fr] opacity-0",
-                    )}
-                  >
-                    <span className="overflow-hidden">
-                      <span className="block max-w-2xl pb-3 pt-2 text-[15px] leading-relaxed text-ink-soft sm:pl-[3.25rem]">
-                        {item.why}
-                      </span>
-                    </span>
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      </Reveal>
-    </section>
-  );
+                            <p className="mt-2.5 max-w-md pl-5 text-[15px] leading-relaxed text-ink-soft">
+                                {item.why}
+                            </p>
+                        </li>
+                    ))}
+                </ul>
+            </Reveal>
+        </section>
+    );
 }
