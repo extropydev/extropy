@@ -40,8 +40,8 @@ export const site: ISite = {
             key: "github",
             icon: <GitHubSvg/>,
             label: "GitHub",
-            handle: "kukarachass",
-            href: "https://github.com/kukarachass",
+            handle: "extropydev",
+            href: "https://github.com/extropydev",
         },
         {
             key: "telegram",
