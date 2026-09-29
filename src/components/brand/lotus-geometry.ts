@@ -1,10 +1,3 @@
-/**
- * Shared geometry for the extropy lotus mark.
- *
- * Five petals — one per principle of extropy — fanned around a core circle.
- * The leaf path points up from its base at the origin; each petal is scaled,
- * pushed out past the core gap, then rotated into place.
- */
 export const LOTUS_VIEWBOX = "-54 -64 108 84";
 
 export const LOTUS_CORE_RADIUS = 8;

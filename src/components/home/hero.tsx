@@ -5,7 +5,6 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionLabel } from "@/components/ui/section-label";
 import { Link } from "@/i18n/navigation";
 
-/** Five small petals orbiting slowly behind the hero lotus. */
 function OrbitDecoration() {
   return (
     <svg

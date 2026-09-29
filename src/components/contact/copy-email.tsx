@@ -23,7 +23,7 @@ export function CopyEmail({ email }: { email: string }) {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       timeoutRef.current = setTimeout(() => setCopied(false), 2000);
     } catch {
-      // Clipboard unavailable — the mailto link next to it still works.
+      // no clipboard access, mailto link still works
     }
   }
 

@@ -31,7 +31,7 @@ export async function generateMetadata({
   return {
     title: {
       default: t("title"),
-      template: "%s — extropy",
+      template: "%s | extropy",
     },
     description: t("description"),
     metadataBase: new URL("https://extropy.dev"),

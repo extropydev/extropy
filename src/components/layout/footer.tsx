@@ -103,7 +103,7 @@ export async function Footer() {
                 <div
                     className="mt-8 flex flex-col gap-2 text-[13px] text-cream-soft sm:flex-row sm:items-center sm:justify-between">
                     <p>
-                        © {new Date().getFullYear()} extropy — {t("owner")}
+                        © {new Date().getFullYear()} extropy - {t("owner")}
                     </p>
                     <p className="text-[11px] font-bold uppercase tracking-[0.16em]">
                         {t("colophon")}

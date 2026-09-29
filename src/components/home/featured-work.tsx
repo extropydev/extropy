@@ -7,7 +7,6 @@ import {getWork, WORK_SLUGS} from "@/content/work";
 import {Link} from "@/i18n/navigation";
 import type {Locale} from "@/i18n/routing";
 
-/** The proof: four shipped projects, flagship first. */
 export async function FeaturedWork({locale}: { locale: Locale }) {
     const t = await getTranslations("work.home");
     const cases = getWork(locale);

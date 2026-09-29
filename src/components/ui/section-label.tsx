@@ -5,10 +5,6 @@ interface SectionLabelProps {
   className?: string;
 }
 
-/**
- * Petal-shaped eyebrow chip — the recurring brand label.
- * Works on both light and dark surfaces.
- */
 export function SectionLabel({ children, className }: SectionLabelProps) {
   return (
     <span

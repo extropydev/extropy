@@ -65,7 +65,7 @@ export function Header() {
         <Link
           href="/"
           className="group flex items-center gap-2.5 text-ink"
-          aria-label="extropy — home"
+          aria-label="extropy home"
         >
           <LotusMark interactive className="h-6 w-8" />
           <span className="font-display text-lg font-bold tracking-tight">

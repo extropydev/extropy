@@ -39,7 +39,7 @@ export default async function ContactPage({
                 </p>
             </Reveal>
 
-            {/* Email — the main act */}
+            {/* Email */}
             <Reveal className="mt-12" delay={0.08}>
                 <div className="group petal-card petal-bloom relative overflow-hidden bg-ink p-7 text-cream sm:p-12">
                     <svg

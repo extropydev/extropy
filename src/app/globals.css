@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
-/*
- * extropy.dev — design tokens
- * Warm paper, ink, deep moss accent. Logo cream reserved for dark bands.
- * The petal (two rounded + two sharp corners) is the core shape of the system.
- */
+/* tokens */
 :root {
   --paper: #faf8f3;
   --paper-raised: #f1ede2;
@@ -65,7 +61,7 @@ body {
   border-radius: 4px;
 }
 
-/* ————— Petal shapes: two open corners, two closed — the brand geometry ————— */
+/* petal shapes */
 
 .petal-card {
   border-radius: 3rem 1rem 3rem 1rem;
@@ -103,7 +99,7 @@ a:hover .petal-bloom {
     -webkit-text-stroke-color 0.4s ease;
 }
 
-/* ————— Custom icon micro-animations (triggered by .group:hover) ————— */
+/* icon animations */
 
 /* payments: pulse line draws through the card */
 .icon-pulse-line {

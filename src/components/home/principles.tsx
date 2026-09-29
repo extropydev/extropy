@@ -21,11 +21,6 @@ interface Principle {
 
 const AUTO_ADVANCE_MS = 5000;
 
-/**
- * The five petals of the extropy mark, one per principle of extropianism —
- * each translated into what it means for a client's project.
- * Rendered as a dark stage: cream lotus, moss-green active petal.
- */
 export function Principles() {
     const t = useTranslations("home.principles");
     const principles = t.raw("items") as Principle[];
@@ -141,7 +136,7 @@ export function Principles() {
                                     transition={{duration: 0.4, ease: [0.22, 1, 0.36, 1]}}
                                 >
                                     <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent-bright">
-                                        0{active + 1} / 05 — {principle.original}
+                                        0{active + 1} / 05 - {principle.original}
                                     </p>
                                     <h3 className="mt-4 font-display text-xl font-bold tracking-tight text-cream sm:text-2xl">
                                         {principle.name}

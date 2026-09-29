@@ -263,8 +263,8 @@ export const workEn: WorkDictionary = {
         tagline:
             "A site for a car headlight studio: services, a drag-to-compare before/after, a work gallery and local SEO.",
         overview: [
-            "A production site for an automotive lighting workshop in Odesa that repairs, restores and customises headlights — from resealing a fogged housing to a fully custom Bi-LED build.",
-            "Everything on the page belongs to the studio: photos shot in their own bay, their services, their reviews. The visual direction came out of those photos — the magenta, violet and cyan of the RGB rings they build into headlights.",
+            "A production site for an automotive lighting workshop in Odesa that repairs, restores and customises headlights, from resealing a fogged housing to a fully custom Bi-LED build.",
+            "Everything on the page belongs to the studio: photos shot in their own bay, their services, their reviews. The visual direction came out of those photos: the magenta, violet and cyan of the RGB rings they build into headlights.",
         ],
         built: [
             {
@@ -287,7 +287,7 @@ export const workEn: WorkDictionary = {
         craft: [
             {
                 title: "One folder to maintain the whole site",
-                body: "Services, works, reviews, FAQ, phone, address — all of it lives in src/content. Adding a photo means adding one object to an array; there isn't a single line of copy in the markup.",
+                body: "Services, works, reviews, FAQ, phone, address: all of it lives in src/content. Adding a photo means adding one object to an array; there isn't a single line of copy in the markup.",
             },
             {
                 title: "The first screen doesn't wait for JavaScript",
@@ -303,7 +303,7 @@ export const workEn: WorkDictionary = {
             },
         ],
         captions: {
-            "ld-hero": "First screen — the studio's own work behind the headline",
+            "ld-hero": "First screen: the studio's own work behind the headline",
             "ld-services": "Services: the photo on the right follows the hovered row",
             "ld-before-after": "Before/after with a draggable divider",
             "ld-works": "Work gallery with a full-screen viewer",

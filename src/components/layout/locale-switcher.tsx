@@ -7,7 +7,6 @@ import {usePathname, useRouter} from "@/i18n/navigation";
 import {localeNames, routing, type Locale} from "@/i18n/routing";
 import {cn} from "@/lib/cn";
 
-/** Compact 4-language switcher. */
 export function LocaleSwitcher({className}: { className?: string }) {
     const locale = useLocale();
     const router = useRouter();

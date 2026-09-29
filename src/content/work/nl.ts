@@ -268,8 +268,8 @@ export const workNl: WorkDictionary = {
         tagline:
             "Een site voor een koplampstudio: diensten, een sleepbare voor-en-na-vergelijking, een werkgalerij en lokale SEO.",
         overview: [
-            "Een productiesite voor een autoverlichtingsstudio in Odesa die koplampen repareert, restaureert en ombouwt — van het opnieuw afdichten van een beslagen behuizing tot een volledig op maat gemaakte Bi-LED.",
-            "Alles op de pagina is van de studio zelf: foto's uit hun eigen werkplaats, hun diensten, hun reviews. De visuele richting komt regelrecht uit die foto's — het magenta, violet en cyaan van de RGB-ringen die ze in koplampen bouwen.",
+            "Een productiesite voor een autoverlichtingsstudio in Odesa die koplampen repareert, restaureert en ombouwt, van het opnieuw afdichten van een beslagen behuizing tot een volledig op maat gemaakte Bi-LED.",
+            "Alles op de pagina is van de studio zelf: foto's uit hun eigen werkplaats, hun diensten, hun reviews. De visuele richting komt regelrecht uit die foto's: het magenta, violet en cyaan van de RGB-ringen die ze in koplampen bouwen.",
         ],
         built: [
             {
@@ -292,7 +292,7 @@ export const workNl: WorkDictionary = {
         craft: [
             {
                 title: "Eén map om de hele site te onderhouden",
-                body: "Diensten, werk, reviews, FAQ, telefoonnummer, adres — het staat allemaal in src/content. Een foto toevoegen is één object aan een array toevoegen; in de opmaak staat geen enkele regel tekst.",
+                body: "Diensten, werk, reviews, FAQ, telefoonnummer, adres: het staat allemaal in src/content. Een foto toevoegen is één object aan een array toevoegen; in de opmaak staat geen enkele regel tekst.",
             },
             {
                 title: "Het eerste scherm wacht niet op JavaScript",
@@ -308,7 +308,7 @@ export const workNl: WorkDictionary = {
             },
         ],
         captions: {
-            "ld-hero": "Eerste scherm — achter de kop staat echt werk van de studio",
+            "ld-hero": "Eerste scherm: achter de kop staat echt werk van de studio",
             "ld-services": "Diensten: de foto rechts volgt de regel onder de cursor",
             "ld-before-after": "Voor-en-na met een versleepbare scheidingslijn",
             "ld-works": "Werkgalerij met schermvullende weergave",

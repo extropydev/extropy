@@ -3,7 +3,6 @@ import { ArrowRightIcon } from "@/components/icons";
 import { Reveal } from "@/components/ui/reveal";
 import { Link } from "@/i18n/navigation";
 
-/** Closing call-to-action band, shared by several pages. */
 export async function ContactCta() {
   const t = await getTranslations("cta");
 

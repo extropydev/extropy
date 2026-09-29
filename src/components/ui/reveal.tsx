@@ -9,7 +9,6 @@ interface RevealProps {
     delay?: number;
 }
 
-/** Fades content up as it scrolls into view. Runs once. */
 export function Reveal({children, className, delay = 0}: RevealProps) {
     const reducedMotion = useReducedMotion();
 

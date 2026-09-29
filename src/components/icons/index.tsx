@@ -1,11 +1,5 @@
 import { cn } from "@/lib/cn";
 
-/**
- * Hand-drawn icon set for extropy.dev — no icon libraries.
- * Every icon inherits `currentColor` and animates when a parent `.group`
- * is hovered (keyframes live in globals.css).
- */
-
 interface IconProps {
   className?: string;
 }
@@ -30,7 +24,6 @@ function Svg({
   );
 }
 
-/** Bank card with a heartbeat line that draws itself on hover. */
 export function PaymentsIcon({ className }: IconProps) {
   return (
     <Svg className={className}>
@@ -44,7 +37,6 @@ export function PaymentsIcon({ className }: IconProps) {
   );
 }
 
-/** Key that turns into the lock on hover. */
 export function AuthIcon({ className }: IconProps) {
   return (
     <Svg className={className}>
@@ -56,7 +48,6 @@ export function AuthIcon({ className }: IconProps) {
   );
 }
 
-/** Basket; items drop in one by one on hover. */
 export function CartIcon({ className }: IconProps) {
   return (
     <Svg className={className}>
@@ -71,7 +62,6 @@ export function CartIcon({ className }: IconProps) {
   );
 }
 
-/** Desktop frame; the phone slides out of it on hover. */
 export function ResponsiveIcon({ className }: IconProps) {
   return (
     <Svg className={className}>
@@ -86,7 +76,6 @@ export function ResponsiveIcon({ className }: IconProps) {
   );
 }
 
-/** Speed gauge; the needle sweeps on hover. */
 export function PerformanceIcon({ className }: IconProps) {
   return (
     <Svg className={className}>
@@ -98,7 +87,6 @@ export function PerformanceIcon({ className }: IconProps) {
   );
 }
 
-/** External / forward arrow, nudges north-east on hover. */
 export function ArrowUpRightIcon({ className }: IconProps) {
   return (
     <Svg className={className}>
@@ -110,7 +98,6 @@ export function ArrowUpRightIcon({ className }: IconProps) {
   );
 }
 
-/** Forward arrow, nudges east on hover. */
 export function ArrowRightIcon({ className }: IconProps) {
   return (
     <Svg className={className}>
@@ -122,7 +109,6 @@ export function ArrowRightIcon({ className }: IconProps) {
   );
 }
 
-/** Globe; the meridian flips on hover. */
 export function GlobeIcon({ className }: IconProps) {
   return (
     <Svg className={className}>
@@ -133,7 +119,6 @@ export function GlobeIcon({ className }: IconProps) {
   );
 }
 
-/** Envelope. */
 export function MailIcon({ className }: IconProps) {
   return (
     <Svg className={className}>

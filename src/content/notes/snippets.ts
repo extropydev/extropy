@@ -1,10 +1,5 @@
 import type { NoteSlug } from "./types";
 
-/**
- * Code samples are intentionally short: each one shows the single decision
- * that makes the whole approach safe. Comments are in English in every locale
- * because that is how real code is written.
- */
 export const noteSnippets: Record<NoteSlug, string> = {
   payments: `export async function POST(req: Request) {
   // Reject anything Stripe didn't sign.

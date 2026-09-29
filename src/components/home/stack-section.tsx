@@ -10,11 +10,6 @@ interface StackItem {
     why: string;
 }
 
-/**
- * Quiet and fully open: every tool is set as a small entry on a ruled grid,
- * nothing hidden behind a hover. Two columns on desktop, one on a phone,
- * with the petal mark as the only ornament.
- */
 export function StackSection() {
     const t = useTranslations("home.stack");
     const items = t.raw("items") as StackItem[];
