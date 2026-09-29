@@ -48,140 +48,140 @@ export const workNl: WorkDictionary = {
         note: "De productfoto's in dit prototype zijn stockbeelden. De techniek eronder is echt.",
     },
 
-    cosmetology: {
-        type: "Boekingsplatform",
-        tagline:
-            "Een boekingsplatform voor een beautystudio: zeven stappen van account tot bevestigde afspraak.",
-        overview: [
-            "Een complete website voor een studio voor permanente make-up: diensten met prijzen, voor-en-na-vergelijkingen, een FAQ en een volledig online boekingsproces.",
-            "De boekingswizard is het hart. Een klant registreert zich, bevestigt het account, kiest een dienst, beantwoordt een korte vragenlijst, krijgt een aanbeveling, kiest een datum en bevestigt. Zeven stappen die moeiteloos voelen.",
-        ],
-        built: [
-            {
-                title: "Boekingswizard in zeven stappen",
-                body: "Elke stap valideert voordat de volgende opent, de voortgang is altijd zichtbaar en er gaat niets verloren als de klant teruggaat om een antwoord te wijzigen.",
-            },
-            {
-                title: "Accounts met verificatie",
-                body: "Boeken kan alleen als geregistreerde klant. Dat beschermt de agenda van de studio tegen spamafspraken.",
-            },
-            {
-                title: "Vragenlijst en aanbeveling",
-                body: "De wizard stelt een paar vragen en stelt de juiste behandeling voor, nog voordat de klant een datum kiest.",
-            },
-            {
-                title: "Voor-en-na-galerij",
-                body: "Interactieve vergelijkingssliders laten bezoekers het resultaat van elke behandeling met eigen ogen beoordelen.",
-            },
-            {
-                title: "Twee talen",
-                body: "De hele site, inclusief de boekingswizard, werkt in het Engels en Russisch met één schakelaar.",
-            },
-        ],
-        craft: [
-            {
-                title: "Een rustige beeldtaal",
-                body: "Zachte crème- en kleitinten, veel ruimte, ronde vormen. De site oogt zoals de studio aanvoelt.",
-            },
-            {
-                title: "Formulieren zonder frustratie",
-                body: "Invoermaskers, directe validatie en duidelijke foutmeldingen. Het hele proces werkt comfortabel met één duim op een telefoon.",
-            },
-        ],
-        captions: {
-            "cosmetology-booking": "Stap één van de boekingswizard",
-            "cosmetology-results": "Voor-en-na-sliders in de resultatensectie",
-        },
-    },
+    // cosmetology: {
+    //     type: "Boekingsplatform",
+    //     tagline:
+    //         "Een boekingsplatform voor een beautystudio: zeven stappen van account tot bevestigde afspraak.",
+    //     overview: [
+    //         "Een complete website voor een studio voor permanente make-up: diensten met prijzen, voor-en-na-vergelijkingen, een FAQ en een volledig online boekingsproces.",
+    //         "De boekingswizard is het hart. Een klant registreert zich, bevestigt het account, kiest een dienst, beantwoordt een korte vragenlijst, krijgt een aanbeveling, kiest een datum en bevestigt. Zeven stappen die moeiteloos voelen.",
+    //     ],
+    //     built: [
+    //         {
+    //             title: "Boekingswizard in zeven stappen",
+    //             body: "Elke stap valideert voordat de volgende opent, de voortgang is altijd zichtbaar en er gaat niets verloren als de klant teruggaat om een antwoord te wijzigen.",
+    //         },
+    //         {
+    //             title: "Accounts met verificatie",
+    //             body: "Boeken kan alleen als geregistreerde klant. Dat beschermt de agenda van de studio tegen spamafspraken.",
+    //         },
+    //         {
+    //             title: "Vragenlijst en aanbeveling",
+    //             body: "De wizard stelt een paar vragen en stelt de juiste behandeling voor, nog voordat de klant een datum kiest.",
+    //         },
+    //         {
+    //             title: "Voor-en-na-galerij",
+    //             body: "Interactieve vergelijkingssliders laten bezoekers het resultaat van elke behandeling met eigen ogen beoordelen.",
+    //         },
+    //         {
+    //             title: "Twee talen",
+    //             body: "De hele site, inclusief de boekingswizard, werkt in het Engels en Russisch met één schakelaar.",
+    //         },
+    //     ],
+    //     craft: [
+    //         {
+    //             title: "Een rustige beeldtaal",
+    //             body: "Zachte crème- en kleitinten, veel ruimte, ronde vormen. De site oogt zoals de studio aanvoelt.",
+    //         },
+    //         {
+    //             title: "Formulieren zonder frustratie",
+    //             body: "Invoermaskers, directe validatie en duidelijke foutmeldingen. Het hele proces werkt comfortabel met één duim op een telefoon.",
+    //         },
+    //     ],
+    //     captions: {
+    //         "cosmetology-booking": "Stap één van de boekingswizard",
+    //         "cosmetology-results": "Voor-en-na-sliders in de resultatensectie",
+    //     },
+    // },
 
-    sushi: {
-        type: "Restaurant & bezorging",
-        tagline:
-            "Een luxe sushibezorging: menu, boxbuilder en winkelwagen in twee talen.",
-        overview: [
-            "Een premium prototype voor sushibezorging in Parijs. Donker interface, gouden details en serif-typografie brengen de taal van een topzaak naar het online bestellen.",
-            "Achter de looks zit een werkende winkel. Het menu filtert per categorie, gerechten gaan in een wagen, een boxbuilder stelt eigen platters samen en elk woord bestaat in het Frans en Engels.",
-        ],
-        built: [
-            {
-                title: "Menu met categorieën",
-                body: "Signatures, nigiri, maki's, platters, desserts. Filteren is direct en de wagen telt mee richting het bezorgminimum.",
-            },
-            {
-                title: "Boxbuilder",
-                body: "Een begeleide flow om stuk voor stuk een eigen platter samen te stellen in plaats van te kiezen uit vaste sets.",
-            },
-            {
-                title: "Frans en Engels",
-                body: "Een volledig tweetalig interface achter één schakelaar, tot aan de gerechtbeschrijvingen toe.",
-            },
-            {
-                title: "Een entree, geen laadscherm",
-                body: "Een preloader in huisstijl en een gefaseerde onthulling zetten de toon nog voor de eerste scroll.",
-            },
-        ],
-        craft: [
-            {
-                title: "Typografie doet de luxe",
-                body: "Een serif-displayletter met een cursief accent draagt het merk. Goud verschijnt alleen waar het telt.",
-            },
-            {
-                title: "Discipline in het donker",
-                body: "Diepe donkere tinten met warme accenten, zo afgesteld dat het eten op foto's smakelijk blijft op elk scherm.",
-            },
-        ],
-        captions: {
-            "sushi-menu": "Het menu met categoriefilters en winkelwagen",
-            "sushi-story": "Verhaalsectie in het Engels, het Frans is één klik verder",
-        },
-    },
+    // sushi: {
+    //     type: "Restaurant & bezorging",
+    //     tagline:
+    //         "Een luxe sushibezorging: menu, boxbuilder en winkelwagen in twee talen.",
+    //     overview: [
+    //         "Een premium prototype voor sushibezorging in Parijs. Donker interface, gouden details en serif-typografie brengen de taal van een topzaak naar het online bestellen.",
+    //         "Achter de looks zit een werkende winkel. Het menu filtert per categorie, gerechten gaan in een wagen, een boxbuilder stelt eigen platters samen en elk woord bestaat in het Frans en Engels.",
+    //     ],
+    //     built: [
+    //         {
+    //             title: "Menu met categorieën",
+    //             body: "Signatures, nigiri, maki's, platters, desserts. Filteren is direct en de wagen telt mee richting het bezorgminimum.",
+    //         },
+    //         {
+    //             title: "Boxbuilder",
+    //             body: "Een begeleide flow om stuk voor stuk een eigen platter samen te stellen in plaats van te kiezen uit vaste sets.",
+    //         },
+    //         {
+    //             title: "Frans en Engels",
+    //             body: "Een volledig tweetalig interface achter één schakelaar, tot aan de gerechtbeschrijvingen toe.",
+    //         },
+    //         {
+    //             title: "Een entree, geen laadscherm",
+    //             body: "Een preloader in huisstijl en een gefaseerde onthulling zetten de toon nog voor de eerste scroll.",
+    //         },
+    //     ],
+    //     craft: [
+    //         {
+    //             title: "Typografie doet de luxe",
+    //             body: "Een serif-displayletter met een cursief accent draagt het merk. Goud verschijnt alleen waar het telt.",
+    //         },
+    //         {
+    //             title: "Discipline in het donker",
+    //             body: "Diepe donkere tinten met warme accenten, zo afgesteld dat het eten op foto's smakelijk blijft op elk scherm.",
+    //         },
+    //     ],
+    //     captions: {
+    //         "sushi-menu": "Het menu met categoriefilters en winkelwagen",
+    //         "sushi-story": "Verhaalsectie in het Engels, het Frans is één klik verder",
+    //     },
+    // },
 
-    dela: {
-        type: "E-commerce",
-        tagline:
-            "Een kledingwinkel met een volledige klantflow en een adminpaneel om die te runnen — volledig op mockdata gebouwd.",
-        overview: [
-            "Een prototype voor een Oekraïens damesmodemerk, gebouwd om aan een echte klant te laten zien, niet om in een middagje in elkaar te zetten. Catalogus, productpagina's, winkelwagen, afrekenen, een klantaccount en een volwaardig adminpaneel — alles wat een kledingwinkel nodig heeft, zonder de herkenbare AI-sjabloonlook.",
-            "Alles draait op mockdata zonder backend: de status blijft bewaard in de browser, dus een demo overleeft een refresh, en een beheerder kan een bestelling live, midden in de tabel, door de hele statuspijplijn leiden terwijl de klant meekijkt.",
-        ],
-        built: [
-            {
-                title: "Catalogus met combineerbare filters",
-                body: "Maat, kleur, prijsklasse, stof en collectie filteren samen en blijven gesynchroniseerd met de voorraad, met snel toevoegen aan de winkelwagen rechtstreeks vanaf de productkaart.",
-            },
-            {
-                title: "Winkelwagen en afrekenen in drie stappen",
-                body: "Contactgegevens, bezorging en betaling als aparte stappen, met keuze uit Nova Poshta-afhaalpunt, pakketautomaat of koerier, kortingscodes en een voortgangsbalk naar gratis verzending.",
-            },
-            {
-                title: "Klantaccount",
-                body: "Bestelgeschiedenis met een visuele statustijdlijn en trackingnummer, opgeslagen bezorgadressen, een bonussaldo en een verlanglijst die de sessie overleeft.",
-            },
-            {
-                title: "Adminpaneel",
-                body: "Bestelstatus wijzigen kan rechtstreeks in de tabel, zonder door te klikken — bovenop een dashboard met een omzetgrafiek en meldingen bij lage voorraad.",
-            },
-        ],
-        craft: [
-            {
-                title: "Geen UI-library, geen standaardlook",
-                body: "Elk onderdeel — knoppen, dropdowns, de maattabel-modal — is met de hand gebouwd op Tailwind-tokens, tot en met een op maat gemaakt SVG-logo, uitgesneden uit het logobestand van de klant.",
-            },
-            {
-                title: "Status die een refresh overleeft",
-                body: "Winkelwagen, verlanglijst en statuswijzigingen in het adminpaneel worden opgeslagen in localStorage, zodat een livedemonstratie nooit haar plek kwijtraakt.",
-            },
-            {
-                title: "Getest op echte telefoonbreedtes, niet alleen verkleind",
-                body: "Elke route is met een script gecontroleerd op horizontale overflow bij 320–768px — zo kwamen een menu dat werd afgesneden door een backdrop-filter-container en een zijbalk die de pagina 600px opzij duwde aan het licht, nog vóórdat de klant ze zag.",
-            },
-        ],
-        captions: {
-            "dela-catalog": "Catalogus met combineerbare filters en live voorraadindicatoren",
-            "dela-admin": "Bestelling in het adminpaneel — statuswijziging rechtstreeks in de tabel, visuele pijplijn en Nova Poshta-tracking",
-        },
-        note: "Een frontend-prototype: er zit geen backend, database of betaalprovider achter. Producten, bestellingen en klanten zijn mockdata, en wijzigingen in het adminpaneel bestaan alleen in de opslag van de browser.",
-    },
+    // dela: {
+    //     type: "E-commerce",
+    //     tagline:
+    //         "Een kledingwinkel met een volledige klantflow en een adminpaneel om die te runnen — volledig op mockdata gebouwd.",
+    //     overview: [
+    //         "Een prototype voor een Oekraïens damesmodemerk, gebouwd om aan een echte klant te laten zien, niet om in een middagje in elkaar te zetten. Catalogus, productpagina's, winkelwagen, afrekenen, een klantaccount en een volwaardig adminpaneel — alles wat een kledingwinkel nodig heeft, zonder de herkenbare AI-sjabloonlook.",
+    //         "Alles draait op mockdata zonder backend: de status blijft bewaard in de browser, dus een demo overleeft een refresh, en een beheerder kan een bestelling live, midden in de tabel, door de hele statuspijplijn leiden terwijl de klant meekijkt.",
+    //     ],
+    //     built: [
+    //         {
+    //             title: "Catalogus met combineerbare filters",
+    //             body: "Maat, kleur, prijsklasse, stof en collectie filteren samen en blijven gesynchroniseerd met de voorraad, met snel toevoegen aan de winkelwagen rechtstreeks vanaf de productkaart.",
+    //         },
+    //         {
+    //             title: "Winkelwagen en afrekenen in drie stappen",
+    //             body: "Contactgegevens, bezorging en betaling als aparte stappen, met keuze uit Nova Poshta-afhaalpunt, pakketautomaat of koerier, kortingscodes en een voortgangsbalk naar gratis verzending.",
+    //         },
+    //         {
+    //             title: "Klantaccount",
+    //             body: "Bestelgeschiedenis met een visuele statustijdlijn en trackingnummer, opgeslagen bezorgadressen, een bonussaldo en een verlanglijst die de sessie overleeft.",
+    //         },
+    //         {
+    //             title: "Adminpaneel",
+    //             body: "Bestelstatus wijzigen kan rechtstreeks in de tabel, zonder door te klikken — bovenop een dashboard met een omzetgrafiek en meldingen bij lage voorraad.",
+    //         },
+    //     ],
+    //     craft: [
+    //         {
+    //             title: "Geen UI-library, geen standaardlook",
+    //             body: "Elk onderdeel — knoppen, dropdowns, de maattabel-modal — is met de hand gebouwd op Tailwind-tokens, tot en met een op maat gemaakt SVG-logo, uitgesneden uit het logobestand van de klant.",
+    //         },
+    //         {
+    //             title: "Status die een refresh overleeft",
+    //             body: "Winkelwagen, verlanglijst en statuswijzigingen in het adminpaneel worden opgeslagen in localStorage, zodat een livedemonstratie nooit haar plek kwijtraakt.",
+    //         },
+    //         {
+    //             title: "Getest op echte telefoonbreedtes, niet alleen verkleind",
+    //             body: "Elke route is met een script gecontroleerd op horizontale overflow bij 320–768px — zo kwamen een menu dat werd afgesneden door een backdrop-filter-container en een zijbalk die de pagina 600px opzij duwde aan het licht, nog vóórdat de klant ze zag.",
+    //         },
+    //     ],
+    //     captions: {
+    //         "dela-catalog": "Catalogus met combineerbare filters en live voorraadindicatoren",
+    //         "dela-admin": "Bestelling in het adminpaneel — statuswijziging rechtstreeks in de tabel, visuele pijplijn en Nova Poshta-tracking",
+    //     },
+    //     note: "Een frontend-prototype: er zit geen backend, database of betaalprovider achter. Producten, bestellingen en klanten zijn mockdata, en wijzigingen in het adminpaneel bestaan alleen in de opslag van de browser.",
+    // },
 
     saas: {
         type: "Marketingsite",
@@ -220,49 +220,49 @@ export const workNl: WorkDictionary = {
         },
     },
 
-    houseDecor: {
-        type: "Webshop",
-        tagline:
-            "Een volwaardige webwinkel: catalogus, winkelwagen, afrekenen, accounts en retourzendingen.",
-        overview: [
-            "Een volledig werkend prototype van een webshop voor woondecoratie"
-        ],
-        built: [
-            {
-                title: "Catalogus met echte filters",
-                body: "Categorieën, maten, kleuren, patronen, prijzen en kortingen. Filters kunnen worden gecombineerd en worden opgeslagen in de URL, zodat je elke gefilterde weergave eenvoudig kunt delen via een link.",
-            },
-            {
-                title: "Winkelwagen & afrekenen",
-                body: "De winkelwagen blijft behouden na het vernieuwen van de pagina en synchroniseert met het account na het inloggen. Vóór de betaling controleert de server de prijzen en voorraad opnieuw, zodat de klant nooit betaalt op basis van verouderde gegevens.",
-            },
-            {
-                title: "Accounts & OAuth",
-                body: "Inloggen via Google, Facebook of e-mail. Sessies worden opgeslagen in httpOnly-cookies en de database past row-level security toe op elke tabel.",
-            },
-            {
-                title: "Favorieten & promo's",
-                body: "Verlanglijstjes, banneradvertenties en kortingscodes. Alledaagse functies die ongemerkt de verkoop stimuleren.",
-            },
-        ],
-        craft: [
-            {
-                title: "Snel op gemiddelde telefoons",
-                body: "Server components en strikte afbeeldingoptimalisatie houden de catalogus snel op echte apparaten, niet alleen op de laptop van de ontwikkelaar.",
-            },
-            {
-                title: "State die zich netjes gedraagt",
-                body: "Zustand beheert de winkelwagen, React Query de servergegevens. Twee compacte tools die elk hun werk goed doen.",
-            },
-        ],
-        captions: {
-            "decor-about": "Sectie over de winkel",
-            "decor-catalog": "Volledig werkende catalogus met filteropties",
-            "decor-product-page": "Handige productpagina waar je alle informatie over een specifiek product kunt bekijken",
-        },
-
-        note: "Productfoto's in het prototype zijn afkomstig uit stock-bibliotheken. De techniek erachter is echt.",
-    },
+    // houseDecor: {
+    //     type: "Webshop",
+    //     tagline:
+    //         "Een volwaardige webwinkel: catalogus, winkelwagen, afrekenen, accounts en retourzendingen.",
+    //     overview: [
+    //         "Een volledig werkend prototype van een webshop voor woondecoratie"
+    //     ],
+    //     built: [
+    //         {
+    //             title: "Catalogus met echte filters",
+    //             body: "Categorieën, maten, kleuren, patronen, prijzen en kortingen. Filters kunnen worden gecombineerd en worden opgeslagen in de URL, zodat je elke gefilterde weergave eenvoudig kunt delen via een link.",
+    //         },
+    //         {
+    //             title: "Winkelwagen & afrekenen",
+    //             body: "De winkelwagen blijft behouden na het vernieuwen van de pagina en synchroniseert met het account na het inloggen. Vóór de betaling controleert de server de prijzen en voorraad opnieuw, zodat de klant nooit betaalt op basis van verouderde gegevens.",
+    //         },
+    //         {
+    //             title: "Accounts & OAuth",
+    //             body: "Inloggen via Google, Facebook of e-mail. Sessies worden opgeslagen in httpOnly-cookies en de database past row-level security toe op elke tabel.",
+    //         },
+    //         {
+    //             title: "Favorieten & promo's",
+    //             body: "Verlanglijstjes, banneradvertenties en kortingscodes. Alledaagse functies die ongemerkt de verkoop stimuleren.",
+    //         },
+    //     ],
+    //     craft: [
+    //         {
+    //             title: "Snel op gemiddelde telefoons",
+    //             body: "Server components en strikte afbeeldingoptimalisatie houden de catalogus snel op echte apparaten, niet alleen op de laptop van de ontwikkelaar.",
+    //         },
+    //         {
+    //             title: "State die zich netjes gedraagt",
+    //             body: "Zustand beheert de winkelwagen, React Query de servergegevens. Twee compacte tools die elk hun werk goed doen.",
+    //         },
+    //     ],
+    //     captions: {
+    //         "decor-about": "Sectie over de winkel",
+    //         "decor-catalog": "Volledig werkende catalogus met filteropties",
+    //         "decor-product-page": "Handige productpagina waar je alle informatie over een specifiek product kunt bekijken",
+    //     },
+    //
+    //     note: "Productfoto's in het prototype zijn afkomstig uit stock-bibliotheken. De techniek erachter is echt.",
+    // },
     ldStudio: {
         type: "Bedrijfswebsite",
         tagline:
@@ -315,6 +315,4 @@ export const workNl: WorkDictionary = {
         },
         note: "Anders dan de prototypes hierboven draait dit project voor een echte klant: echte foto's, echte diensten, echte contactgegevens.",
     },
-
-
 };

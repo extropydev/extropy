@@ -1,10 +1,10 @@
 export const WORK_SLUGS = [
     "clothes",
-    "dela",
-    "cosmetology",
-    "sushi",
+    // "dela",
+    // "cosmetology",
+    // "sushi",
     "saas",
-    "houseDecor",
+    // "houseDecor",
     "ldStudio",
 ] as const;
 
